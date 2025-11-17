@@ -1,4 +1,5 @@
-import { ExternalLink } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { projects } from '../data';
 
 const Projects = () => {
@@ -10,35 +11,30 @@ const Projects = () => {
         </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-800 flex flex-col"
+          {projects.map((project) => (
+            <Link
+              key={project.id}
+              to={`/project/${project.id}`}
+              className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105 border border-gray-200 dark:border-gray-800 flex flex-col group"
             >
-              <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                <div className="text-6xl">🎮</div>
+              <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative overflow-hidden">
+                <div className="text-6xl group-hover:scale-110 transition-transform">🎮</div>
+                <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
                     {project.title}
                   </h3>
-                  {project.link && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-primary hover:text-secondary transition-colors"
-                      aria-label="View project"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                  )}
+                  <ArrowRight 
+                    size={20} 
+                    className="text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
                 
                 <p className="text-gray-600 dark:text-gray-400 mb-4 flex-1">
-                  {project.description}
+                  {project.shortDescription}
                 </p>
                 
                 <div className="flex flex-wrap gap-2">
@@ -52,7 +48,7 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

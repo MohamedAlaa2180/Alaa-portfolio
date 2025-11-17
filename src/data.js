@@ -103,35 +103,153 @@ export const experience = [
 
 export const projects = [
   {
-    title: "Baloot Online",
-    description: "Popular card game for the Arabic market with multiplayer functionality, real-time gameplay, and social features.",
-    tags: ["Unity", "Multiplayer", "Mobile", "C#"],
-    image: "/projects/baloot.jpg",
-    link: "https://play.google.com/store/apps/details?id=com.tamatem.baloot"
+    id: "kortifo",
+    title: "Kortifo",
+    shortDescription: "Multiplayer 2D card game with over 200,000 downloads across App Store and Google Play.",
+    description: "Kortifo is a competitive multiplayer card game that combines strategic gameplay with real-time networking. The game features a robust backend integration, dynamic mission system, and seamless multiplayer experience powered by Unity Netcode.",
+    platform: ["Android", "iOS"],
+    technologies: ["Unity", "C#", "Unity Netcode", "Unity Cloud Code", "Unity IAP", "Remote Config", "Cloud Save"],
+    tags: ["Multiplayer", "Card Game", "Mobile"],
+    role: "Senior Game Developer",
+    duration: "October 2022 - April 2024",
+    company: "UMAMI Games",
+    features: [
+      "Real-time multiplayer gameplay with Unity Netcode for GameObjects",
+      "Daily and Weekly Objectives System with Unity Cloud Code integration",
+      "Shop System supporting virtual currency and IAP",
+      "Card Effect Queue System for complex game interactions",
+      "Remote configuration for dynamic content updates",
+      "Cloud save functionality for cross-device progression"
+    ],
+    achievements: [
+      "200,000+ downloads across both stores",
+      "Architected scalable multiplayer infrastructure",
+      "Implemented remote feature tuning reducing deployment cycles",
+      "Translated Figma designs into high-fidelity in-game UI"
+    ],
+    images: ["/Alaa-portfolio/projects/kortifo/screenshot1.jpg"],
+    videos: [],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.umami.kortifo",
+      appStore: ""
+    }
   },
   {
-    title: "AR Training Application",
-    description: "Augmented Reality training application for industrial equipment with interactive 3D models and step-by-step guidance.",
-    tags: ["Unity", "AR", "Vuforia", "C#"],
-    image: "/projects/ar-training.jpg"
+    id: "rehlatie",
+    title: "Rehlatie",
+    shortDescription: "Educational 2D mobile game with over 150,000 downloads focused on interactive learning.",
+    description: "Rehlatie is an educational mobile game designed to make learning engaging and fun. The project focused heavily on performance optimization and scalable architecture using modern Unity features.",
+    platform: ["Android", "iOS"],
+    technologies: ["Unity", "C#", "Unity Addressables", "Firebase Cloud Functions", "Firebase Remote Config", "Firebase Crashlytics", "Firebase Analytics"],
+    tags: ["Educational", "2D", "Mobile"],
+    role: "Senior Game Developer",
+    duration: "April 2024 - May 2025",
+    company: "Nahdet Misr",
+    features: [
+      "Performance-optimized 2D gameplay mechanics",
+      "Unity Addressables for efficient asset management",
+      "Firebase integration for analytics and crash reporting",
+      "Remote configuration for A/B testing and content updates",
+      "Cross-platform deployment pipeline"
+    ],
+    achievements: [
+      "150,000+ downloads across both stores",
+      "Reduced app size by 40% using Addressables",
+      "Improved runtime efficiency through system refactoring",
+      "Maintained 4.5+ star rating on both stores"
+    ],
+    images: ["/Alaa-portfolio/projects/rehlatie/screenshot1.jpg"],
+    videos: [],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.nahdetmisr.rehlatie",
+      appStore: ""
+    }
   },
   {
-    title: "VR Museum Experience",
-    description: "Virtual Reality museum tour with interactive exhibits, audio guides, and detailed 3D artifacts.",
-    tags: ["Unity", "VR", "Oculus", "C#"],
-    image: "/projects/vr-museum.jpg"
+    id: "experience-makkah",
+    title: "Experience Makkah",
+    shortDescription: "Cross-platform VR simulation of the Hajj journey with over 250,000 downloads on Google Play.",
+    description: "Experience Makkah is an immersive VR application that simulates the spiritual journey of Hajj. Built for mobile VR using Google Cardboard SDK, the app provides an accessible and deeply engaging experience optimized for mid-tier devices.",
+    platform: ["Android", "iOS"],
+    technologies: ["Unity", "C#", "Google Cardboard SDK", "Spatial Audio", "AR Foundation"],
+    tags: ["VR", "Mobile", "Simulation"],
+    role: "Junior Game Developer (Solo Developer)",
+    duration: "October 2019 - December 2021",
+    company: "Vhorus",
+    features: [
+      "Fully immersive mobile VR experience with Google Cardboard",
+      "Interactive camera systems and scene management",
+      "Spatial audio for realistic soundscapes",
+      "Optimized rendering pipeline for mobile devices",
+      "Cross-platform deployment on Android and iOS"
+    ],
+    achievements: [
+      "250,000+ downloads on Google Play Store",
+      "Solo development from concept to deployment",
+      "Optimized for smooth operation on mid-tier devices",
+      "Featured as innovative use of mobile VR technology"
+    ],
+    images: ["/Alaa-portfolio/projects/experience-makkah/screenshot1.jpg"],
+    videos: [],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.vhorus.experiencemakkah",
+      appStore: ""
+    }
   },
   {
-    title: "Mobile Puzzle Game",
-    description: "Casual puzzle game with 100+ levels, power-ups system, and social leaderboards.",
-    tags: ["Unity", "Mobile", "Game Design", "C#"],
-    image: "/projects/puzzle-game.jpg"
+    id: "ar-applications",
+    title: "AR Advertising Applications",
+    shortDescription: "Multiple Augmented Reality applications for advertising and interactive brand activations.",
+    description: "A series of AR applications developed for various brands and advertising campaigns. These projects focused on creating engaging and interactive experiences that blend digital content with the real world.",
+    platform: ["Android", "iOS"],
+    technologies: ["Unity", "C#", "Vuforia", "AR Foundation", "ARCore", "ARKit"],
+    tags: ["AR", "Mobile", "Advertising"],
+    role: "Junior Game Developer",
+    duration: "October 2019 - December 2021",
+    company: "Vhorus",
+    features: [
+      "Image tracking and recognition with Vuforia",
+      "Interactive 3D models and animations",
+      "Cross-platform AR experiences",
+      "Optimized asset management for quick loading",
+      "Custom AR interactions for brand engagement"
+    ],
+    achievements: [
+      "Developed 10+ AR applications for various clients",
+      "Successful brand activations with high engagement rates",
+      "Worked as sole developer in small creative team"
+    ],
+    images: ["/Alaa-portfolio/projects/ar-apps/screenshot1.jpg"],
+    videos: [],
+    links: {}
   },
   {
-    title: "Educational Math Game",
-    description: "Interactive educational game for children to learn mathematics through fun gameplay mechanics.",
-    tags: ["Unity", "Mobile", "Educational", "C#"],
-    image: "/projects/math-game.jpg"
+    id: "educational-ar-games",
+    title: "Educational AR Games",
+    shortDescription: "2D educational mobile games with AR features designed for student learning.",
+    description: "A collection of educational games that combine traditional 2D gameplay with Augmented Reality elements to create engaging learning experiences for students. Each game was tailored to specific educational objectives.",
+    platform: ["Android"],
+    technologies: ["Unity", "C#", "AR Foundation", "Vuforia"],
+    tags: ["Educational", "AR", "2D", "Mobile"],
+    role: "Junior Game Programmer (Solo Developer)",
+    duration: "February 2019 - October 2019",
+    company: "CLOUD SOFT",
+    features: [
+      "Interactive learning mechanics blending AR and traditional gameplay",
+      "Curriculum-aligned educational content",
+      "Performance tuning for wide device compatibility",
+      "Intuitive UI/UX designed for students",
+      "Asset integration and gameplay logic"
+    ],
+    achievements: [
+      "Delivered multiple projects independently",
+      "Met educational objectives and production timelines",
+      "Positive feedback from educators and students",
+      "Successfully deployed on Android devices"
+    ],
+    images: ["/Alaa-portfolio/projects/educational-games/screenshot1.jpg"],
+    videos: [],
+    links: {}
   }
 ];
 
