@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const Hero = () => {
@@ -28,14 +28,25 @@ const Hero = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
           <a
             href={`mailto:${personalInfo.email}`}
-            className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+            className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium shadow-md hover:shadow-lg"
           >
             <Mail size={20} />
-            Get in Touch
+            {personalInfo.email}
           </a>
+          <a
+            href={`tel:${personalInfo.phone}`}
+            className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-dark-light text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-dark transition-colors font-medium shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
+          >
+            <Phone size={20} />
+            {personalInfo.phone}
+          </a>
+          <div className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-dark-light text-gray-900 dark:text-white rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
+            <MapPin size={20} />
+            {personalInfo.location}
+          </div>
         </div>
 
         <div className="flex justify-center gap-6">
@@ -43,7 +54,7 @@ const Hero = () => {
             href={personalInfo.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-gray-100 dark:hover:bg-dark transition-colors"
+            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
             aria-label="LinkedIn"
           >
             <Linkedin size={24} />
@@ -52,7 +63,7 @@ const Hero = () => {
             href={personalInfo.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-gray-100 dark:hover:bg-dark transition-colors"
+            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
             aria-label="GitHub"
           >
             <Github size={24} />

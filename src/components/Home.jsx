@@ -4,7 +4,6 @@ import Hero from './Hero';
 import Experience from './Experience';
 import Projects from './Projects';
 import Skills from './Skills';
-import Contact from './Contact';
 
 const Home = () => {
   const location = useLocation();
@@ -26,7 +25,6 @@ const Home = () => {
       <Experience />
       <Projects />
       <Skills />
-      <Contact />
     </>
   );
 };

@@ -2,7 +2,7 @@ const Navigation = () => {
   return (
     <nav className="hidden md:block">
       <ul className="flex gap-8">
-        {['About', 'Experience', 'Projects', 'Skills', 'Contact'].map((item) => (
+        {['About', 'Experience', 'Projects', 'Skills'].map((item) => (
           <li key={item}>
             <a
               href={`#${item.toLowerCase()}`}
