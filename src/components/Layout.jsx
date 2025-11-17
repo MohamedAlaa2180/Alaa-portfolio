@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
                 <Navigation />
               ) : (
                 <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium">
-                  ← Back to Projects
+                  ← Back to Portfolio
                 </Link>
               )}
             </div>
