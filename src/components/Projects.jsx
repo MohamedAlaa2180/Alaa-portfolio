@@ -18,7 +18,24 @@ const Projects = () => {
               className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105 border border-gray-200 dark:border-gray-800 flex flex-col group"
             >
               <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative overflow-hidden">
-                <div className="text-6xl group-hover:scale-110 transition-transform">🎮</div>
+                {project.thumbnail ? (
+                  <>
+                    <img
+                      src={project.thumbnail}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextElementSibling.style.display = 'flex';
+                      }}
+                    />
+                    <div className="hidden w-full h-full items-center justify-center">
+                      <div className="text-6xl">🎮</div>
+                    </div>
+                  </>
+                ) : (
+                  <div className="text-6xl group-hover:scale-110 transition-transform">🎮</div>
+                )}
                 <div className="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>
               
