@@ -8,9 +8,13 @@ const Hero = () => {
         <div className="mb-8">
           <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-xl">
             <img 
-              src="/profile.jpeg" 
+              src="/Alaa-portfolio/profile.jpeg" 
               alt="Mohamed Alaa" 
               className="w-full h-full rounded-full object-cover"
+              onError={(e) => {
+                e.target.style.display = 'none';
+                e.target.parentElement.innerHTML = '<div class="w-full h-full rounded-full bg-white dark:bg-dark flex items-center justify-center text-4xl font-bold text-gradient">MA</div>';
+              }}
             />
           </div>
           <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
