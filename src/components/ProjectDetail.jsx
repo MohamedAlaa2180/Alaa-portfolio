@@ -1,12 +1,15 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Building2, User } from 'lucide-react';
 import { projects } from '../data';
+import ImageLightbox from './ImageLightbox';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
   const project = projects.find(p => p.id === projectId);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -14,6 +17,23 @@ const ProjectDetail = () => {
 
   const handleBackClick = () => {
     navigate('/', { state: { scrollTo: 'projects' } });
+  };
+
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+  };
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % project.images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + project.images.length) % project.images.length);
   };
 
   if (!project) {
@@ -111,19 +131,39 @@ const ProjectDetail = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {project.images.map((image, index) => (
-                <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                <button
+                  key={index}
+                  onClick={() => openLightbox(index)}
+                  className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden group cursor-pointer relative"
+                >
                   <img
                     src={image}
                     alt={`${project.title} screenshot ${index + 1}`}
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     onError={(e) => {
                       e.target.style.display = 'none';
                     }}
                   />
-                </div>
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+                    <span className="text-white opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium">
+                      Click to enlarge
+                    </span>
+                  </div>
+                </button>
               ))}
             </div>
           </div>
+        )}
+
+        {/* Lightbox */}
+        {lightboxOpen && (
+          <ImageLightbox
+            images={project.images}
+            currentIndex={currentImageIndex}
+            onClose={closeLightbox}
+            onNext={nextImage}
+            onPrev={prevImage}
+          />
         )}
 
         {/* Videos Section */}
