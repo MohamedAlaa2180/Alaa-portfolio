@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, Download, Code } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const Hero = () => {
@@ -49,6 +49,17 @@ const Hero = () => {
           </div>
         </div>
 
+        <div className="flex flex-wrap justify-center gap-4 mb-6">
+          <a
+            href="/Alaa-portfolio/resume.pdf"
+            download="Mohamed_Alaa_Resume.pdf"
+            className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg hover:shadow-xl transition-all font-semibold"
+          >
+            <Download size={20} />
+            Download Resume
+          </a>
+        </div>
+
         <div className="flex justify-center gap-6">
           <a
             href={personalInfo.linkedin}
@@ -67,6 +78,15 @@ const Hero = () => {
             aria-label="GitHub"
           >
             <Github size={24} />
+          </a>
+          <a
+            href={personalInfo.hackerrank}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
+            aria-label="HackerRank"
+          >
+            <Code size={24} />
           </a>
         </div>
       </div>

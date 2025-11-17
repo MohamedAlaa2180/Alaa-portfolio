@@ -6,6 +6,7 @@ export const personalInfo = {
   location: "Cairo, Egypt",
   linkedin: "https://www.linkedin.com/in/m1-mohamedalaa/",
   github: "https://github.com/MohamedAlaa2180",
+  hackerrank: "https://www.hackerrank.com/profile/mohamedalaasale1",
   summary: "Senior Unity Engineer with 6+ years of expertise in game development, AR/VR solutions, and interactive experiences. Currently leading development teams at Genesis Creations, delivering cutting-edge VR training platforms and innovative multiplayer games. Proven track record with 600K+ combined downloads across published titles, including Kortifo (200K+), Experience Makkah (250K+), and Rehlatie (150K+). Specialized in multiplayer systems, VR/AR development, performance optimization, and scalable architecture design. Expert in Unity, C#, Photon/Netcode, Meta SDK, Firebase, and cloud services integration."
 };
 
