@@ -449,63 +449,6 @@ export const projects = [
       playStore: "https://play.google.com/store/apps/details?id=com.Vhorus.TangramOf7&hl=en_US",
       appStore: "https://apps.apple.com/eg/app/tangram-of-7/id1591046876?l=ar"
     }
-  },
-  {
-    id: "ar-applications",
-    title: "AR Advertising Applications",
-    shortDescription: "Multiple Augmented Reality applications for advertising and interactive brand activations.",
-    description: "A series of AR applications developed for various brands and advertising campaigns. These projects focused on creating engaging and interactive experiences that blend digital content with the real world.",
-    thumbnail: "/Alaa-portfolio/projects/ar-apps/thumbnail.jpg",
-    platform: ["Android", "iOS"],
-    technologies: ["Unity", "C#", "Vuforia", "AR Foundation", "ARCore", "ARKit"],
-    tags: ["AR", "Mobile", "Advertising"],
-    role: "Junior Game Developer",
-    duration: "October 2019 - December 2021",
-    company: "Vhorus",
-    features: [
-      "Image tracking and recognition with Vuforia",
-      "Interactive 3D models and animations",
-      "Cross-platform AR experiences",
-      "Optimized asset management for quick loading",
-      "Custom AR interactions for brand engagement"
-    ],
-    achievements: [
-      "Developed 10+ AR applications for various clients",
-      "Successful brand activations with high engagement rates",
-      "Worked as sole developer in small creative team"
-    ],
-    images: ["/Alaa-portfolio/projects/ar-apps/screenshot1.jpg"],
-    videos: [],
-    links: {}
-  },
-  {
-    id: "educational-ar-games",
-    title: "Educational AR Games",
-    shortDescription: "2D educational mobile games with AR features designed for student learning.",
-    description: "A collection of educational games that combine traditional 2D gameplay with Augmented Reality elements to create engaging learning experiences for students. Each game was tailored to specific educational objectives.",
-    thumbnail: "/Alaa-portfolio/projects/educational-games/thumbnail.jpg",
-    platform: ["Android"],
-    technologies: ["Unity", "C#", "AR Foundation", "Vuforia"],
-    tags: ["Educational", "AR", "2D", "Mobile"],
-    role: "Junior Game Programmer (Solo Developer)",
-    duration: "February 2019 - October 2019",
-    company: "CLOUD SOFT",
-    features: [
-      "Interactive learning mechanics blending AR and traditional gameplay",
-      "Curriculum-aligned educational content",
-      "Performance tuning for wide device compatibility",
-      "Intuitive UI/UX designed for students",
-      "Asset integration and gameplay logic"
-    ],
-    achievements: [
-      "Delivered multiple projects independently",
-      "Met educational objectives and production timelines",
-      "Positive feedback from educators and students",
-      "Successfully deployed on Android devices"
-    ],
-    images: ["/Alaa-portfolio/projects/educational-games/screenshot1.jpg"],
-    videos: [],
-    links: {}
   }
 ];
 
