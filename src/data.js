@@ -178,7 +178,15 @@ export const projects = [
       "Translated Figma designs into high-fidelity in-game UI with pixel-perfect accuracy",
       "Maintained 4.5+ star rating on Google Play Store"
     ],
-    images: ["/Alaa-portfolio/projects/kortifo/screenshot1.jpg"],
+    images: [
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-17-051_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-21-710_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-24-843_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-31-686_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-35-920_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-38-266_orig.jpg",
+      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-40-353_orig.jpg"
+    ],
     videos: ["https://www.youtube.com/embed/DAhBdYbARYU"],
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.UMAMI.Kortifo&hl=en_US",
