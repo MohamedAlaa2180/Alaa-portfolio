@@ -103,6 +103,62 @@ export const experience = [
 
 export const projects = [
   {
+    id: "vrc",
+    title: "VRC - Virtual Interactive Cleanroom",
+    shortDescription: "First-of-its-kind VR training platform in Canada for pharmacy professionals to master sterile compounding protocols.",
+    description: "The Virtual Interactive Cleanroom (VRC) is a groundbreaking immersive VR training solution designed to help pharmacy professionals boost their sterile compounding skills through on-demand virtual training. This first-of-its-kind platform in Canada addresses the critical challenge of ensuring compliance and skill mastery in sterile compounding for hospital and compounding pharmacies. The system allows pharmacists and technicians to practice essential protocols including garbing, hand hygiene, and laminar flow hood cleaning in a realistic virtual environment with real-time feedback to ensure precision adherence to sterile protocols.",
+    thumbnail: "/Alaa-portfolio/projects/vrc/thumbnail.jpg",
+    platform: ["Meta Quest (VR)"],
+    technologies: ["Unity", "C#", "Meta SDK", "Backend Services", "Custom VR Interaction System"],
+    tags: ["VR", "Training", "Healthcare", "Simulation", "Educational"],
+    role: "Team Leader & Lead Developer",
+    duration: "2024 - 2025",
+    company: "Genesis Creations",
+    features: [
+      "Realistic virtual cleanroom environment replicating pharmaceutical standards",
+      "Complete garbing simulation with proper donning procedures",
+      "Hand hygiene training with step-by-step protocols",
+      "Laminar flow hood cleaning procedures",
+      "Physical object simulation (mops, tissues, cleaning tools)",
+      "Floor cleaning mechanics with realistic physics",
+      "Surface cleaning using various cleaning tools",
+      "Hand washing simulation with proper technique validation",
+      "PPE simulation (masks, gloves) with correct wearing procedures",
+      "Real-time feedback system ensuring protocol compliance",
+      "Dynamic cleaning system working on any surface with any tool",
+      "Modular objectives system orchestrating interactions and steps",
+      "Automated workflow handling with minimal manual intervention",
+      "Immersive hand tracking and interaction mechanics",
+      "Performance optimized for Meta Quest platform"
+    ],
+    achievements: [
+      "Led team of 7 junior and senior developers",
+      "Delivered Canada's first VR sterile compounding training platform",
+      "Developed complete dynamic cleaning system from scratch",
+      "Created modular objectives system for automated workflow orchestration",
+      "Implemented realistic pharmaceutical cleanroom environment",
+      "Achieved real-time protocol validation and feedback",
+      "Designed scalable system architecture supporting multiple training modules",
+      "Successfully integrated Meta SDK for advanced VR interactions",
+      "Delivered production-ready solution for hospital and compounding pharmacies",
+      "Provided technical leadership and mentorship to development team"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/vrc/screenshot1.jpg",
+      "/Alaa-portfolio/projects/vrc/screenshot2.jpg",
+      "/Alaa-portfolio/projects/vrc/screenshot3.jpg",
+      "/Alaa-portfolio/projects/vrc/screenshot4.jpg",
+      "/Alaa-portfolio/projects/vrc/screenshot5.jpg",
+      "/Alaa-portfolio/projects/vrc/screenshot6.jpg"
+    ],
+    videos: [],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "zombieleta",
     title: "Zombieleta",
     shortDescription: "Fast-paced multiplayer action game where humans battle zombies in intense survival matches.",
