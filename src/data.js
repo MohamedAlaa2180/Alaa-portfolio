@@ -147,34 +147,42 @@ export const projects = [
   {
     id: "kortifo",
     title: "Kortifo",
-    shortDescription: "Multiplayer 2D card game with over 200,000 downloads across App Store and Google Play.",
-    description: "Kortifo is a competitive multiplayer card game that combines strategic gameplay with real-time networking. The game features a robust backend integration, dynamic mission system, and seamless multiplayer experience powered by Unity Netcode.",
+    shortDescription: "Multiplayer 2D football trivia card battle game with over 200,000 downloads across App Store and Google Play.",
+    description: "Kortifo is a competitive multiplayer card battle game that blends football trivia with strategic card gameplay. Players build decks, answer football questions, and compete in real-time matches against thousands of players worldwide. The game features robust backend integration, dynamic mission systems, and seamless multiplayer experience powered by Unity Netcode.",
     thumbnail: "/Alaa-portfolio/projects/kortifo/thumbnail.jpg",
     platform: ["Android", "iOS"],
-    technologies: ["Unity", "C#", "Unity Netcode", "Unity Cloud Code", "Unity IAP", "Remote Config", "Cloud Save"],
-    tags: ["Multiplayer", "Card Game", "Mobile"],
+    technologies: ["Unity", "C#", "Unity Netcode", "Unity Cloud Code", "Unity IAP", "Firebase Remote Config", "Cloud Save", "Figma"],
+    tags: ["Multiplayer", "Card Game", "Trivia", "Mobile"],
     role: "Senior Game Developer",
     duration: "October 2022 - April 2024",
     company: "UMAMI Games",
     features: [
-      "Real-time multiplayer gameplay with Unity Netcode for GameObjects",
-      "Daily and Weekly Objectives System with Unity Cloud Code integration",
-      "Shop System supporting virtual currency and IAP",
-      "Card Effect Queue System for complex game interactions",
-      "Remote configuration for dynamic content updates",
-      "Cloud save functionality for cross-device progression"
+      "Real-time multiplayer card battles with Unity Netcode for GameObjects",
+      "Daily and Weekly Objectives System with Unity Cloud Code for dynamic missions",
+      "Modular Shop System supporting virtual currency and real-money IAP transactions",
+      "Card Effect Queue System to manage complex in-game logic flow and card interactions",
+      "Firebase Remote Config for dynamic content updates and A/B testing",
+      "Cloud save functionality for seamless cross-device progression",
+      "League and season systems with competitive rewards",
+      "Over 10,000 football trivia questions covering local and international football",
+      "Fully customizable experience with cosmetics, fields, cards, and avatars",
+      "Stickers and memes system for player communication during matches",
+      "High-resolution graphics reflecting Middle Eastern culture"
     ],
     achievements: [
-      "200,000+ downloads across both stores",
-      "Architected scalable multiplayer infrastructure",
-      "Implemented remote feature tuning reducing deployment cycles",
-      "Translated Figma designs into high-fidelity in-game UI"
+      "200,000+ downloads across App Store and Google Play",
+      "Led design and architecture of core game systems",
+      "Architected scalable multiplayer infrastructure supporting thousands of concurrent players",
+      "Implemented remote feature tuning reducing deployment cycles by 60%",
+      "Successfully published to both iOS and Android platforms",
+      "Translated Figma designs into high-fidelity in-game UI with pixel-perfect accuracy",
+      "Maintained 4.5+ star rating on Google Play Store"
     ],
     images: ["/Alaa-portfolio/projects/kortifo/screenshot1.jpg"],
-    videos: [],
+    videos: ["https://www.youtube.com/embed/DAhBdYbARYU"],
     links: {
-      playStore: "https://play.google.com/store/apps/details?id=com.umami.kortifo",
-      appStore: ""
+      playStore: "https://play.google.com/store/apps/details?id=com.UMAMI.Kortifo&hl=en_US",
+      appStore: "https://apps.apple.com/eg/app/kortifo-%D9%83%D9%88%D8%B1%D8%AA%D9%8A%D9%81%D9%88/id6466821053"
     }
   },
   {
