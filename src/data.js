@@ -14,7 +14,7 @@ export const experience = [
     company: "Genesis Creations",
     position: "Lead Unity Engineer",
     period: "May 2025 - Present",
-    location: "Remote",
+    location: "Cairo, Egypt",
     achievements: [
       "Led a team of 4 mid-level and senior Unity developers, ensuring high-quality deliverables and continuous team growth",
       "Collaborated with product owners to define sprint goals, break down features into tasks, and plan agile sprints effectively",
@@ -40,7 +40,7 @@ export const experience = [
     company: "UMAMI Games",
     position: "Senior Game Developer",
     period: "October 2022 - April 2024",
-    location: "Remote",
+    location: "Cairo, Egypt",
     achievements: [
       "Worked on Kortifo, a multiplayer 2D card game achieving over 200,000 downloads",
       "Designed and architected Daily and Weekly Objectives System integrating with Unity Cloud Code",
