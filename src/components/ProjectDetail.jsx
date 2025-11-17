@@ -7,13 +7,17 @@ const ProjectDetail = () => {
   const navigate = useNavigate();
   const project = projects.find(p => p.id === projectId);
 
+  const handleBackClick = () => {
+    navigate('/', { state: { scrollTo: 'projects' } });
+  };
+
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Project Not Found</h2>
           <button
-            onClick={() => navigate('/')}
+            onClick={handleBackClick}
             className="text-primary hover:underline"
           >
             Return to Portfolio
@@ -27,7 +31,7 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-white dark:bg-dark py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <button
-          onClick={() => navigate('/')}
+          onClick={handleBackClick}
           className="flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-8 font-medium"
         >
           <ArrowLeft size={20} />
