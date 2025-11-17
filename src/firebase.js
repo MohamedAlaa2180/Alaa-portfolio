@@ -4,13 +4,13 @@ import { getAnalytics } from 'firebase/analytics';
 // Your web app's Firebase configuration
 // TODO: Replace with your actual Firebase config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-  measurementId: "YOUR_MEASUREMENT_ID"
+  apiKey: "AIzaSyCaB-IePtgKJim3bRFQs5ojlz7VEnXp5UI",
+  authDomain: "alaa-portfolio-d057a.firebaseapp.com",
+  projectId: "alaa-portfolio-d057a",
+  storageBucket: "alaa-portfolio-d057a.firebasestorage.app",
+  messagingSenderId: "1098189444598",
+  appId: "1:1098189444598:web:b85ffd0dd58ff9898c23d7",
+  measurementId: "G-X6JH1Y5131"
 };
 
 // Initialize Firebase
