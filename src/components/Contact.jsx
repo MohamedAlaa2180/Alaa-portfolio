@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Linkedin, Github, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const Contact = () => {
@@ -70,15 +70,6 @@ const Contact = () => {
                 aria-label="GitHub"
               >
                 <Github size={28} className="text-primary" />
-              </a>
-              <a
-                href={personalInfo.portfolio}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 rounded-full hover:bg-primary/10 transition-colors"
-                aria-label="Portfolio"
-              >
-                <ExternalLink size={28} className="text-primary" />
               </a>
             </div>
           </div>

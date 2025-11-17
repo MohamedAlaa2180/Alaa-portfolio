@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const Hero = () => {
@@ -30,15 +30,6 @@ const Hero = () => {
             <Mail size={20} />
             Get in Touch
           </a>
-          <a
-            href="https://mohamedalaa95.weebly.com/uploads/1/3/9/9/139964385/mohamed_alaa_-_unity_game_developer_resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary dark:text-primary rounded-lg hover:bg-primary hover:text-white transition-colors font-medium"
-          >
-            <ExternalLink size={20} />
-            View Resume
-          </a>
         </div>
 
         <div className="flex justify-center gap-6">
@@ -59,15 +50,6 @@ const Hero = () => {
             aria-label="GitHub"
           >
             <Github size={24} />
-          </a>
-          <a
-            href={personalInfo.portfolio}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-gray-100 dark:hover:bg-dark transition-colors"
-            aria-label="Portfolio Website"
-          >
-            <ExternalLink size={24} />
           </a>
         </div>
       </div>

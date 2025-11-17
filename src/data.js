@@ -1,12 +1,11 @@
 export const personalInfo = {
   name: "Mohamed Alaa",
   title: "Unity Game Developer",
-  email: "mo.alaa3010@gmail.com",
-  phone: "+20 1025668844",
+  email: "mohamedalaasalem1@gmail.com",
+  phone: "+201555117858",
   location: "Cairo, Egypt",
-  linkedin: "https://www.linkedin.com/in/mohamedalaa95",
-  github: "https://github.com/mohamedalaa95",
-  portfolio: "https://mohamedalaa95.weebly.com",
+  linkedin: "https://www.linkedin.com/in/m1-mohamedalaa/",
+  github: "https://github.com/MohamedAlaa2180",
   summary: "Unity Game Developer with 5+ years of experience in mobile game development, AR/VR, and interactive experiences. Proven track record of delivering high-quality games with strong technical skills in C#, game mechanics, and optimization."
 };
 
