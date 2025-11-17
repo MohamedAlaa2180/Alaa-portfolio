@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Building2, User } from 'lucide-react';
 import { projects } from '../data';
@@ -6,6 +7,10 @@ const ProjectDetail = () => {
   const { projectId } = useParams();
   const navigate = useNavigate();
   const project = projects.find(p => p.id === projectId);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [projectId]);
 
   const handleBackClick = () => {
     navigate('/', { state: { scrollTo: 'projects' } });
