@@ -1,22 +1,35 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { projects } from '../data';
 
 const Projects = () => {
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-dark-light">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gradient">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold text-center mb-12 text-gradient"
+        >
           Featured Projects
-        </h2>
+        </motion.h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
-            <Link
+          {projects.map((project, index) => (
+            <motion.div
               key={project.id}
-              to={`/project/${project.id}`}
-              className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105 border border-gray-200 dark:border-gray-800 flex flex-col group"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
+              <Link
+                to={`/project/${project.id}`}
+                className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105 border border-gray-200 dark:border-gray-800 flex flex-col group block"
+              >
               <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative overflow-hidden">
                 {project.thumbnail ? (
                   <>
@@ -65,7 +78,8 @@ const Projects = () => {
                   ))}
                 </div>
               </div>
-            </Link>
+              </Link>
+            </motion.div>
           ))}
         </div>
       </div>

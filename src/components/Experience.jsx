@@ -1,18 +1,29 @@
 import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { experience } from '../data';
 
 const Experience = () => {
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-dark">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gradient">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-4xl font-bold text-center mb-12 text-gradient"
+        >
           Work Experience
-        </h2>
+        </motion.h2>
         
         <div className="space-y-8">
           {experience.map((job, index) => (
-            <div
+            <motion.div
               key={index}
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-800"
             >
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
@@ -48,7 +59,7 @@ const Experience = () => {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

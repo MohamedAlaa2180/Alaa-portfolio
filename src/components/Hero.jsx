@@ -1,4 +1,5 @@
 import { Github, Linkedin, Mail, Phone, MapPin, Download, Code } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { personalInfo } from '../data';
 
 const Hero = () => {
@@ -6,7 +7,12 @@ const Hero = () => {
     <section id="about" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-dark dark:to-dark-light">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
-          <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-xl">
+          <motion.div 
+            initial={{ scale: 0, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-xl"
+          >
             <img 
               src="/Alaa-portfolio/profile.jpeg" 
               alt="Mohamed Alaa" 
@@ -16,19 +22,39 @@ const Hero = () => {
                 e.target.parentElement.innerHTML = '<div class="w-full h-full rounded-full bg-white dark:bg-dark flex items-center justify-center text-4xl font-bold text-gradient">MA</div>';
               }}
             />
-          </div>
-          <h1 className="text-5xl sm:text-6xl font-bold mb-4 text-gray-900 dark:text-white">
+          </motion.div>
+          <motion.h1 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="text-5xl sm:text-6xl font-bold mb-4 text-gray-900 dark:text-white"
+          >
             {personalInfo.name}
-          </h1>
-          <p className="text-2xl sm:text-3xl text-gradient font-semibold mb-6">
+          </motion.h1>
+          <motion.p 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-2xl sm:text-3xl text-gradient font-semibold mb-6"
+          >
             {personalInfo.title}
-          </p>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
+          </motion.p>
+          <motion.p 
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8"
+          >
             {personalInfo.summary}
-          </p>
+          </motion.p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="flex flex-wrap justify-center gap-4 mb-6"
+        >
           <a
             href={`mailto:${personalInfo.email}`}
             className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium shadow-md hover:shadow-lg"
@@ -47,20 +73,32 @@ const Hero = () => {
             <MapPin size={20} />
             {personalInfo.location}
           </div>
-        </div>
+        </motion.div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-6">
-          <a
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="flex flex-wrap justify-center gap-4 mb-6"
+        >
+          <motion.a
             href="/Alaa-portfolio/resume.pdf"
             download="Mohamed_Alaa_Resume.pdf"
             className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg hover:shadow-xl transition-all font-semibold"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             <Download size={20} />
             Download Resume
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
 
-        <div className="flex justify-center gap-6">
+        <motion.div 
+          initial={{ y: 20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5, delay: 0.7 }}
+          className="flex justify-center gap-6"
+        >
           <a
             href={personalInfo.linkedin}
             target="_blank"
@@ -88,7 +126,7 @@ const Hero = () => {
           >
             <Code size={24} />
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
