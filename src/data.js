@@ -103,6 +103,47 @@ export const experience = [
 
 export const projects = [
   {
+    id: "zombieleta",
+    title: "Zombieleta",
+    shortDescription: "Fast-paced multiplayer action game where humans battle zombies in intense survival matches.",
+    description: "Zombieleta is a thrilling multiplayer action game where players engage in an intense battle between humans and zombies. At the start of each match, all participants begin as humans; after 10 seconds, one player transforms into a zombie whose mission is to catch and convert the remaining humans. As more humans are turned into zombies, the challenge intensifies for the survivors, who must hide and employ strategic abilities to endure until the timer runs out.",
+    platform: ["Android"],
+    technologies: ["Unity", "C#", "Photon Unity Networking (Fusion)", "Unity Services"],
+    tags: ["Multiplayer", "Action", "Mobile"],
+    role: "Solo Game Developer",
+    duration: "2024 - 2025",
+    company: "Dream-Catcher (Personal Project)",
+    features: [
+      "Dynamic role-switching gameplay where players transform between humans and zombies",
+      "Real-time multiplayer functionality powered by Photon Fusion",
+      "Strategic abilities including poison syringe and healing mechanics",
+      "Poison syringe immobilizes zombies but makes humans vulnerable, adding tactical depth",
+      "Healing ability allows humans to save poisoned teammates",
+      "Tense hide-and-seek gameplay with timer-based survival mechanics",
+      "Team-based zombie coordination to convert all humans before time runs out"
+    ],
+    achievements: [
+      "Completed full development lifecycle as sole developer",
+      "Successfully deployed on Google Play Store",
+      "Designed and implemented engaging multiplayer mechanics with high replayability",
+      "Seamlessly integrated real-time multiplayer ensuring smooth online matches",
+      "Created strategic depth through unique ability systems"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-48-33-595_orig.jpg",
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-48-58-866_orig.jpg",
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-49-08-082_orig.jpg",
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-02-703_orig.jpg",
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-16-264_orig.jpg",
+      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-39-730_orig.jpg"
+    ],
+    videos: ["https://www.youtube.com/embed/h0EL8jTQM1k"],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.DreamCatcher.Zombieleta&pli=1",
+      appStore: ""
+    }
+  },
+  {
     id: "kortifo",
     title: "Kortifo",
     shortDescription: "Multiplayer 2D card game with over 200,000 downloads across App Store and Google Play.",

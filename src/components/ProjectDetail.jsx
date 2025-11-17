@@ -154,20 +154,33 @@ const ProjectDetail = () => {
                   Videos
                 </h2>
                 <div className="space-y-4">
-                  {project.videos.map((video, index) => (
-                    <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
-                      <video
-                        src={video}
-                        controls
-                        className="w-full h-full"
-                        onError={(e) => {
-                          e.target.style.display = 'none';
-                        }}
-                      >
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  ))}
+                  {project.videos.map((video, index) => {
+                    const isYouTube = video.includes('youtube.com') || video.includes('youtu.be');
+                    return (
+                      <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                        {isYouTube ? (
+                          <iframe
+                            src={video}
+                            title={`${project.title} video ${index + 1}`}
+                            className="w-full h-full"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        ) : (
+                          <video
+                            src={video}
+                            controls
+                            className="w-full h-full"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                          >
+                            Your browser does not support the video tag.
+                          </video>
+                        )}
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             )}
