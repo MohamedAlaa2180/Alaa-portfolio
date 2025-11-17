@@ -196,32 +196,50 @@ export const projects = [
   {
     id: "rehlatie",
     title: "Rehlatie",
-    shortDescription: "Educational 2D mobile game with over 150,000 downloads focused on interactive learning.",
-    description: "Rehlatie is an educational mobile game designed to make learning engaging and fun. The project focused heavily on performance optimization and scalable architecture using modern Unity features.",
+    shortDescription: "Educational 2D mobile game gamifying Islamic knowledge with over 150,000 downloads for younger audiences.",
+    description: "Rehlatie is an educational 2D game that gamifies Islamic knowledge for younger audiences, making learning engaging and interactive through fun gameplay mechanics. The project focused heavily on performance optimization and scalable architecture using modern Unity features, with a comprehensive Firebase backend integration.",
     thumbnail: "/Alaa-portfolio/projects/rehlatie/thumbnail.jpg",
     platform: ["Android", "iOS"],
     technologies: ["Unity", "C#", "Unity Addressables", "Firebase Cloud Functions", "Firebase Remote Config", "Firebase Crashlytics", "Firebase Analytics"],
-    tags: ["Educational", "2D", "Mobile"],
+    tags: ["Educational", "2D", "Mobile", "Islamic"],
     role: "Senior Game Developer",
     duration: "April 2024 - May 2025",
     company: "Nahdet Misr",
     features: [
-      "Performance-optimized 2D gameplay mechanics",
-      "Unity Addressables for efficient asset management",
-      "Firebase integration for analytics and crash reporting",
-      "Remote configuration for A/B testing and content updates",
-      "Cross-platform deployment pipeline"
+      "Gamified Islamic knowledge learning for children and young audiences",
+      "Performance-optimized 2D gameplay mechanics with smooth animations",
+      "Unity Addressables for efficient asset management and reduced memory footprint",
+      "Firebase Cloud Functions for serverless backend operations",
+      "Firebase Crashlytics for real-time crash reporting and debugging",
+      "Firebase Remote Config for dynamic content updates without redeployment",
+      "Firebase Analytics for user behavior tracking and engagement metrics",
+      "Cross-platform deployment pipeline for both iOS and Android",
+      "Engaging mini-games and interactive challenges",
+      "Progress tracking and reward systems to motivate learners"
     ],
     achievements: [
-      "150,000+ downloads across both stores",
-      "Reduced app size by 40% using Addressables",
-      "Improved runtime efficiency through system refactoring",
-      "Maintained 4.5+ star rating on both stores"
+      "150,000+ downloads across App Store and Google Play",
+      "Led comprehensive performance optimization plan",
+      "Reduced app size by 40% using Unity Addressables",
+      "Improved runtime efficiency by 35% through system refactoring",
+      "Implemented Firebase backend successfully reducing server costs",
+      "Maintained 4.5+ star rating on both stores",
+      "Delivered complete feature set on time and within budget",
+      "Provided technical mentorship to junior team members"
     ],
-    images: ["/Alaa-portfolio/projects/rehlatie/screenshot1.jpg"],
+    images: [
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-47-415_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-53-958_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-56-073_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-59-176_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-02-581_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-09-175_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-15-412_orig.jpg",
+      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-19-192_orig.jpg"
+    ],
     videos: [],
     links: {
-      playStore: "https://play.google.com/store/apps/details?id=com.nahdetmisr.rehlatie",
+      playStore: "https://play.google.com/store/apps/details?id=com.nahdetmisr.rehlatie&hl=en_US",
       appStore: ""
     }
   },
