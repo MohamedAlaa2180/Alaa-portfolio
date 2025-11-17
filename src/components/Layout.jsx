@@ -22,35 +22,45 @@ const Layout = ({ children }) => {
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-dark/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <Link to="/" className="text-xl font-bold text-gradient">MA</Link>
+            {isHomePage ? (
+              <>
+                <Navigation />
+                <div className="flex items-center gap-4">
+              </>
+            ) : (
+              <>
+                <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium">
+                  ← Back to Portfolio
+                </Link>
+                <div className="flex items-center gap-4">
+              </>
+            )}
             
-            {isHomePage && <Navigation />}
-            
-            <div className="flex items-center gap-4">
-              <button
-                onClick={() => setDarkMode(!darkMode)}
-                className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
-                aria-label="Toggle dark mode"
-              >
-                {darkMode ? <Sun size={20} /> : <Moon size={20} />}
-              </button>
-              
-              {isHomePage && (
                 <button
-                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                  className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
-                  aria-label="Toggle menu"
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
+                  aria-label="Toggle dark mode"
                 >
-                  {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                  {darkMode ? <Sun size={20} /> : <Moon size={20} />}
                 </button>
-              )}
+                
+                {isHomePage && (
+                  <button
+                    onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                    className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
+                    aria-label="Toggle menu"
+                  >
+                    {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
           
           {isHomePage && mobileMenuOpen && (
             <nav className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
               <div className="flex flex-col gap-2">
-                {['About', 'Experience', 'Projects', 'Skills', 'Contact'].map((item) => (
+                {['About', 'Experience', 'Projects', 'Skills'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
