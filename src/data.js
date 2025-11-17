@@ -11,36 +11,92 @@ export const personalInfo = {
 
 export const experience = [
   {
-    company: "Tamatem Games",
-    position: "Unity Game Developer",
-    period: "July 2024 - Present",
-    location: "Cairo, Egypt (Remote)",
-    achievements: [
-      "Developing mobile games for the Arabic market",
-      "Implementing game mechanics and features",
-      "Optimizing game performance for mobile devices"
-    ]
-  },
-  {
-    company: "Asgard Interactive",
-    position: "Unity Game Developer",
-    period: "March 2022 - July 2024",
-    location: "Cairo, Egypt",
-    achievements: [
-      "Developed core gameplay features for mobile games",
-      "Collaborated with designers and artists to implement game mechanics",
-      "Integrated analytics and monetization systems"
-    ]
-  },
-  {
-    company: "Freelance",
-    position: "Unity Developer",
-    period: "2019 - 2022",
+    company: "Genesis Creations",
+    position: "Lead Unity Engineer",
+    period: "May 2025 - Present",
     location: "Remote",
     achievements: [
-      "Developed AR/VR applications and games",
-      "Created educational and training applications",
-      "Implemented custom tools and systems in Unity"
+      "Led a team of 4 mid-level and senior Unity developers, ensuring high-quality deliverables and continuous team growth",
+      "Collaborated with product owners to define sprint goals, break down features into tasks, and plan agile sprints effectively",
+      "Provided technical mentorship to junior developers across multiple teams, supporting their growth and maintaining code standards",
+      "Improved company-wide development workflow by introducing modern technologies, tools, and strategic process optimizations",
+      "Designed scalable development architectures for new projects and refactored legacy codebases to improve maintainability and performance"
+    ]
+  },
+  {
+    company: "Nahdet Misr",
+    position: "Senior Game Developer",
+    period: "April 2024 - May 2025",
+    location: "Cairo, Egypt",
+    achievements: [
+      "Contributed to the development of Rehlatie, an educational 2D mobile game with over 150,000 downloads",
+      "Designed and implemented performance optimization strategy reducing app size and improving runtime efficiency using Unity Addressables",
+      "Integrated Firebase services including Cloud Functions, Remote Config, Crashlytics, and Analytics",
+      "Managed builds and deployment processes for both App Store and Google Play",
+      "Provided technical support and conducted code reviews for junior team members"
+    ]
+  },
+  {
+    company: "UMAMI Games",
+    position: "Senior Game Developer",
+    period: "October 2022 - April 2024",
+    location: "Remote",
+    achievements: [
+      "Worked on Kortifo, a multiplayer 2D card game achieving over 200,000 downloads",
+      "Designed and architected Daily and Weekly Objectives System integrating with Unity Cloud Code",
+      "Built fully featured Shop System supporting virtual currency and real-money IAP using Unity IAP and Remote Config",
+      "Developed Card Effect Queue System for complex in-game interactions ensuring consistent gameplay logic",
+      "Implemented Unity Netcode for GameObjects to support real-time multiplayer gameplay",
+      "Collaborated with art team to translate Figma designs into polished in-game UI"
+    ]
+  },
+  {
+    company: "EDGE PRO",
+    position: ".NET Developer",
+    period: "March 2022 - July 2022",
+    location: "Cairo, Egypt",
+    achievements: [
+      "Contributed to backend development of government web platforms using ASP.NET and C#",
+      "Designed and implemented RESTful APIs to support secure data exchange between services",
+      "Worked with MySQL and PostgreSQL databases for data modeling and query optimization",
+      "Collaborated with front-end developers and system administrators for smooth deployment"
+    ]
+  },
+  {
+    company: "AVATARIS",
+    position: "Junior Game Developer",
+    period: "January 2022 - March 2022",
+    location: "Remote",
+    achievements: [
+      "Worked on mobile game project focusing on UI development and integration using Unity",
+      "Translated designs from Figma into interactive and responsive in-game interfaces",
+      "Collaborated with graphic designers to optimize asset import workflows",
+      "Maintained clean and scalable UI architecture to support future feature expansions"
+    ]
+  },
+  {
+    company: "Vhorus",
+    position: "Junior Game Developer",
+    period: "October 2019 - December 2021",
+    location: "Cairo, Egypt",
+    achievements: [
+      "Served as sole Unity developer in 3-person team alongside artist and graphic designer",
+      "Developed multiple Augmented Reality (AR) applications for advertising and brand activations using Vuforia and AR Foundation",
+      "Led full development of Experience Makkah VR app surpassing 250,000 downloads on Google Play Store",
+      "Implemented scene management, interactive camera systems, and spatial audio for immersive mobile VR experience",
+      "Optimized build size, memory usage, and rendering pipeline for smooth operation on mid-tier mobile devices"
+    ]
+  },
+  {
+    company: "CLOUD SOFT",
+    position: "Junior Game Programmer",
+    period: "February 2019 - October 2019",
+    location: "Cairo, Egypt",
+    achievements: [
+      "Acted as sole Unity developer for end-to-end development of 2D educational mobile games with AR features",
+      "Designed and implemented interactive learning experiences for students blending AR with traditional gameplay",
+      "Managed asset integration, gameplay logic, UI/UX flow, and performance tuning for Android devices",
+      "Delivered projects independently meeting educational objectives and production timelines"
     ]
   }
 ];
