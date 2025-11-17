@@ -345,6 +345,54 @@ export const projects = [
     }
   },
   {
+    id: "tangram",
+    title: "Tangram of 7",
+    shortDescription: "2D puzzle game challenging players to solve classic tangram shapes with intuitive drag-and-drop mechanics.",
+    description: "Tangram of 7 is a mind-training puzzle game where players create imaginative shapes and designs using seven simple, rotatable wooden-like pieces. As the sole developer, I designed the complete game mechanics, visual flow, and interaction patterns, ensuring smooth drag-and-drop functionality and device responsiveness. The game trains both right and left brain hemispheres through clever puzzle-solving challenges.",
+    thumbnail: "/Alaa-portfolio/projects/tangram/thumbnail.jpg",
+    platform: ["Android", "iOS"],
+    technologies: ["Unity", "C#", "SpriteShape", "Custom UI System"],
+    tags: ["Puzzle", "2D", "Mobile", "Educational"],
+    role: "Solo Developer",
+    duration: "2021",
+    company: "Vhorus",
+    features: [
+      "Classic tangram puzzle gameplay with seven wooden pieces",
+      "Smooth drag-and-drop functionality with intuitive controls",
+      "Custom UI system for seamless user experience",
+      "SpriteShape implementation for crisp 2D visuals",
+      "Multiple puzzle shapes and character designs",
+      "Brain training mechanics stimulating left and right hemispheres",
+      "Device-responsive design for various screen sizes",
+      "Battery-friendly optimization",
+      "Suitable for all ages from children to adults",
+      "Small app size for quick downloads",
+      "Ad-supported free-to-play model"
+    ],
+    achievements: [
+      "500+ downloads across App Store and Google Play",
+      "Completed full development as sole developer",
+      "Designed intuitive puzzle mechanics from scratch",
+      "Implemented custom UI system for smooth interactions",
+      "Achieved 5.0-star rating on App Store (4 reviews)",
+      "Optimized for battery efficiency and performance",
+      "Successfully launched on both iOS and Android platforms",
+      "Created educational tool suitable for schools and childcare facilities"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/tangram/unnamed.jpg",
+      "/Alaa-portfolio/projects/tangram/unnamed (1).jpg",
+      "/Alaa-portfolio/projects/tangram/unnamed (2).jpg",
+      "/Alaa-portfolio/projects/tangram/unnamed (3).jpg",
+      "/Alaa-portfolio/projects/tangram/unnamed (4).jpg"
+    ],
+    videos: [],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.Vhorus.TangramOf7&hl=en_US",
+      appStore: "https://apps.apple.com/eg/app/tangram-of-7/id1591046876?l=ar"
+    }
+  },
+  {
     id: "ar-applications",
     title: "AR Advertising Applications",
     shortDescription: "Multiple Augmented Reality applications for advertising and interactive brand activations.",
