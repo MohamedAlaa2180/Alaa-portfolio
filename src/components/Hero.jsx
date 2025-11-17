@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="mb-8">
           <div className="w-40 h-40 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary to-secondary p-1 shadow-xl">
             <img 
-              src="/profile.jpg" 
+              src="/profile.jpeg" 
               alt="Mohamed Alaa" 
               className="w-full h-full rounded-full object-cover"
             />
