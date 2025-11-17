@@ -151,7 +151,9 @@ export const projects = [
       "/Alaa-portfolio/projects/vrc/screenshot5.jpg",
       "/Alaa-portfolio/projects/vrc/screenshot6.jpg"
     ],
-    videos: [],
+    videos: [
+      "/Alaa-portfolio/projects/vrc/video.mp4"
+    ],
     links: {
       playStore: "",
       appStore: "",
