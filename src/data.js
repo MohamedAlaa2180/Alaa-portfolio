@@ -246,33 +246,53 @@ export const projects = [
   {
     id: "experience-makkah",
     title: "Experience Makkah",
-    shortDescription: "Cross-platform VR simulation of the Hajj journey with over 250,000 downloads on Google Play.",
-    description: "Experience Makkah is an immersive VR application that simulates the spiritual journey of Hajj. Built for mobile VR using Google Cardboard SDK, the app provides an accessible and deeply engaging experience optimized for mid-tier devices.",
+    shortDescription: "Cross-platform mobile VR simulation offering an immersive virtual Hajj journey with over 250,000 downloads.",
+    description: "Experience Makkah is a groundbreaking cross-platform mobile VR application that offers users an immersive virtual Hajj journey. As the sole Unity developer, I handled the entire app development including VR camera systems, spatial audio implementation, and comprehensive platform-specific optimization for both Android and iOS. Built using Google Cardboard SDK, the app provides an accessible and deeply engaging spiritual experience optimized for mid-tier mobile devices.",
     thumbnail: "/Alaa-portfolio/projects/experience-makkah/thumbnail.jpg",
     platform: ["Android", "iOS"],
-    technologies: ["Unity", "C#", "Google Cardboard SDK", "Spatial Audio", "AR Foundation"],
-    tags: ["VR", "Mobile", "Simulation"],
-    role: "Junior Game Developer (Solo Developer)",
+    technologies: ["Unity", "C#", "Google Cardboard SDK", "Spatial Audio", "AR Foundation", "Vuforia"],
+    tags: ["VR", "Mobile", "Simulation", "Educational"],
+    role: "Solo Unity Developer",
     duration: "October 2019 - December 2021",
     company: "Vhorus",
     features: [
-      "Fully immersive mobile VR experience with Google Cardboard",
-      "Interactive camera systems and scene management",
-      "Spatial audio for realistic soundscapes",
-      "Optimized rendering pipeline for mobile devices",
-      "Cross-platform deployment on Android and iOS"
+      "Fully immersive mobile VR experience powered by Google Cardboard SDK",
+      "Virtual tour of Al Masjid Al Haram (Holy Mosque) in Makkah",
+      "Interactive Kaaba room entry and exploration",
+      "Complete Hajj and Umrah simulation (Sa'y between Safa and Marwa, Muzdalifah, Jamarat)",
+      "Al Masjid Al Nabawi (Prophet's Mosque) virtual tour",
+      "Quran recitation with synchronized visualization",
+      "Custom VR camera systems with intuitive controls",
+      "Spatial audio implementation for realistic soundscapes and Azan",
+      "Bilingual support (English and Arabic)",
+      "Scene management and dynamic loading systems",
+      "Platform-specific optimization for Android and iOS",
+      "Memory management for smooth performance on mid-tier devices",
+      "Cross-platform rendering pipeline optimization"
     ],
     achievements: [
       "250,000+ downloads on Google Play Store",
-      "Solo development from concept to deployment",
-      "Optimized for smooth operation on mid-tier devices",
-      "Featured as innovative use of mobile VR technology"
+      "Successfully launched on both iOS App Store and Google Play",
+      "Completed full development lifecycle as sole Unity developer",
+      "Designed and implemented all VR systems from scratch",
+      "Optimized for smooth 60fps operation on mid-tier mobile devices",
+      "Reduced memory footprint by 50% through optimization",
+      "Featured as innovative use of mobile VR for Islamic education",
+      "4.1+ star rating with 644 reviews on Google Play",
+      "Positive impact on Islamic education and Hajj preparation globally"
     ],
-    images: ["/Alaa-portfolio/projects/experience-makkah/screenshot1.jpg"],
-    videos: [],
+    images: [
+      "/Alaa-portfolio/projects/experience-makkah/unnamed.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/unnamed (1).jpg",
+      "/Alaa-portfolio/projects/experience-makkah/unnamed (2).jpg",
+      "/Alaa-portfolio/projects/experience-makkah/unnamed (3).jpg",
+      "/Alaa-portfolio/projects/experience-makkah/unnamed (4).jpg",
+      "/Alaa-portfolio/projects/experience-makkah/unnamed (5).jpg"
+    ],
+    videos: ["https://www.youtube.com/embed/7XONnbZy8wQ"],
     links: {
-      playStore: "https://play.google.com/store/apps/details?id=com.vhorus.experiencemakkah",
-      appStore: ""
+      playStore: "https://play.google.com/store/apps/details?id=com.vhorus.makkah&hl=en_US",
+      appStore: "https://apps.apple.com/us/app/experience-makkah-vol-2/id1509327242"
     }
   },
   {
