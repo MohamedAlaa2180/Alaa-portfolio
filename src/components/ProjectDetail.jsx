@@ -103,159 +103,159 @@ const ProjectDetail = () => {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="md:col-span-2">
-            <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                About the Project
-              </h2>
-              <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                {project.description}
-              </p>
+        {/* Screenshots Section - At the top */}
+        {project.images.length > 0 && (
+          <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              Screenshots
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {project.images.map((image, index) => (
+                <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                  <img
+                    src={image}
+                    alt={`${project.title} screenshot ${index + 1}`}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    onError={(e) => {
+                      e.target.style.display = 'none';
+                    }}
+                  />
+                </div>
+              ))}
             </div>
+          </div>
+        )}
 
-            <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                Key Features
-              </h2>
-              <ul className="space-y-3">
-                {project.features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="text-primary mt-1">▹</span>
-                    <span className="text-gray-700 dark:text-gray-300">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                Achievements
-              </h2>
-              <ul className="space-y-3">
-                {project.achievements.map((achievement, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <span className="text-primary mt-1">✓</span>
-                    <span className="text-gray-700 dark:text-gray-300">{achievement}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {project.images.length > 0 && (
-              <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Screenshots
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {project.images.map((image, index) => (
-                    <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
-                      <img
-                        src={image}
-                        alt={`${project.title} screenshot ${index + 1}`}
-                        className="w-full h-full object-cover"
+        {/* Videos Section */}
+        {project.videos.length > 0 && (
+          <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
+            <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              Videos
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {project.videos.map((video, index) => {
+                const isYouTube = video.includes('youtube.com') || video.includes('youtu.be');
+                return (
+                  <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
+                    {isYouTube ? (
+                      <iframe
+                        src={video}
+                        title={`${project.title} video ${index + 1}`}
+                        className="w-full h-full"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <video
+                        src={video}
+                        controls
+                        className="w-full h-full"
                         onError={(e) => {
                           e.target.style.display = 'none';
                         }}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {project.videos.length > 0 && (
-              <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6">
-                <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                  Videos
-                </h2>
-                <div className="space-y-4">
-                  {project.videos.map((video, index) => {
-                    const isYouTube = video.includes('youtube.com') || video.includes('youtu.be');
-                    return (
-                      <div key={index} className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
-                        {isYouTube ? (
-                          <iframe
-                            src={video}
-                            title={`${project.title} video ${index + 1}`}
-                            className="w-full h-full"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                          />
-                        ) : (
-                          <video
-                            src={video}
-                            controls
-                            className="w-full h-full"
-                            onError={(e) => {
-                              e.target.style.display = 'none';
-                            }}
-                          >
-                            Your browser does not support the video tag.
-                          </video>
-                        )}
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
+                      >
+                        Your browser does not support the video tag.
+                      </video>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
+        )}
 
-          <div className="md:col-span-1">
-            <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 sticky top-24">
-              <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
-                Project Info
-              </h3>
+        {/* About the Project */}
+        <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            About the Project
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+            {project.description}
+          </p>
+        </div>
 
-              <div className="space-y-4">
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                    Platform
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.platform.map((p, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-white dark:bg-dark text-gray-700 dark:text-gray-300 rounded-full text-sm border border-gray-200 dark:border-gray-700"
-                      >
-                        {p}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+        {/* Key Features */}
+        <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            Key Features
+          </h2>
+          <ul className="grid md:grid-cols-2 gap-3">
+            {project.features.map((feature, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="text-primary mt-1">▹</span>
+                <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                    Technologies
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+        {/* Achievements */}
+        <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            Achievements
+          </h2>
+          <ul className="grid md:grid-cols-2 gap-3">
+            {project.achievements.map((achievement, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="text-primary mt-1">✓</span>
+                <span className="text-gray-700 dark:text-gray-300">{achievement}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-                <div>
-                  <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
-                    Tags
-                  </h4>
-                  <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag, index) => (
-                      <span
-                        key={index}
-                        className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+        {/* Project Info - At the bottom */}
+        <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6">
+          <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
+            Project Information
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            <div>
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">
+                Platform
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {project.platform.map((p, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-white dark:bg-dark text-gray-700 dark:text-gray-300 rounded-full text-sm border border-gray-200 dark:border-gray-700"
+                  >
+                    {p}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">
+                Technologies
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {project.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-medium"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-3">
+                Tags
+              </h4>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, index) => (
+                  <span
+                    key={index}
+                    className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm font-medium"
+                  >
+                    {tag}
+                  </span>
+                ))}
               </div>
             </div>
           </div>
