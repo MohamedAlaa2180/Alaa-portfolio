@@ -69,6 +69,17 @@ const ProjectDetail = () => {
                 App Store
               </a>
             )}
+            {project.links.other && (
+              <a
+                href={project.links.other}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors"
+              >
+                <ExternalLink size={16} />
+                Meta Quest
+              </a>
+            )}
           </div>
 
           <div className="flex flex-wrap gap-6 text-sm text-gray-600 dark:text-gray-400">

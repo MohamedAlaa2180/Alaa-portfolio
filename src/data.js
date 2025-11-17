@@ -296,6 +296,55 @@ export const projects = [
     }
   },
   {
+    id: "darbk-khdr",
+    title: "Darbk Khdr (دربك خضر)",
+    shortDescription: "Mobile & VR adventure game immersing players in rich Saudi Arabian cultural traditions and heritage.",
+    description: "Darbk Khdr is a mobile and VR adventure game that immerses players in the rich traditions of Saudi Arabia. As the sole developer, I handled the complete development lifecycle from concept to deployment. The game offers an engaging experience highlighting cultural narratives and heritage, with players choosing between two characters, Majd and Yazid, to embark on an exciting adventure in the Saudi desert.",
+    thumbnail: "/Alaa-portfolio/projects/darbk-khdr/thumbnail.jpg",
+    platform: ["Android", "Meta Quest (VR)"],
+    technologies: ["Unity", "C#", "Adobe Photoshop", "Google Play Services", "Meta Quest SDK"],
+    tags: ["Adventure", "VR", "Mobile", "Cultural", "Educational"],
+    role: "Solo Game Developer",
+    duration: "2023 - 2024",
+    company: "Dream-Catcher (Personal Project)",
+    features: [
+      "Cross-platform adventure game for mobile and VR headsets",
+      "Authentic Saudi Arabian cultural narratives and heritage integration",
+      "Two playable characters (Majd and Yazid) with unique perspectives",
+      "Immersive Saudi desert environment exploration",
+      "Traditional elements incorporated into gameplay and visuals",
+      "Cultural challenges and educational content",
+      "Intuitive gameplay mechanics appealing to broad audiences",
+      "Optimized performance across various Android devices",
+      "VR experience optimized for Meta Quest platform",
+      "Collaborated with artists to deliver high-quality cultural assets",
+      "Arabic language support with cultural authenticity"
+    ],
+    achievements: [
+      "Completed full development lifecycle as sole developer",
+      "Successfully launched on both Google Play and Meta Quest Store",
+      "Integrated authentic Saudi Arabian cultural elements",
+      "Designed engaging gameplay mechanics enhancing user retention",
+      "Optimized assets and code for smooth performance on mid-tier devices",
+      "Collaborated effectively with art team for culturally authentic visuals",
+      "Created educational gaming experience promoting Saudi heritage",
+      "Cross-platform deployment showcasing technical versatility"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-52-974_orig.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-55-229_orig.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-57-191_orig.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-59-811_orig.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-20-02-516_orig.jpg"
+    ],
+    videos: [],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.RMG.DarbkKhdrDemo",
+      appStore: "",
+      other: "https://www.meta.com/experiences/9097137060321303/"
+    }
+  },
+  {
     id: "ar-applications",
     title: "AR Advertising Applications",
     shortDescription: "Multiple Augmented Reality applications for advertising and interactive brand activations.",
