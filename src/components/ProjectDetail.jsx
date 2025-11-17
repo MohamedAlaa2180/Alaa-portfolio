@@ -45,7 +45,7 @@ const ProjectDetail = () => {
             onClick={handleBackClick}
             className="text-primary hover:underline"
           >
-            Return to Portfolio
+            Return to Projects
           </button>
         </div>
       </div>
@@ -60,7 +60,7 @@ const ProjectDetail = () => {
           className="flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-8 font-medium"
         >
           <ArrowLeft size={20} />
-          Back to Portfolio
+          Back to Projects
         </button>
 
         <div className="mb-8">
