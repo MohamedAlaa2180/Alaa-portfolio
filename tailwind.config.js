@@ -14,6 +14,7 @@ export default {
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+        mono: ['Cascadia Code', 'Consolas', 'Monaco', 'monospace'],
       },
     },
   },
