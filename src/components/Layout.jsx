@@ -82,7 +82,7 @@ const Layout = ({ children }) => {
           <div className="absolute bottom-4 right-10 text-2xl font-mono text-secondary">{`/* */`}</div>
         </div>
         <p className="relative z-10">
-          <span className="font-mono text-primary opacity-50">{`//`}</span> {new Date().getFullYear()} Mohamed Alaa <span className="font-mono text-primary opacity-50">{`//`}</span>
+          &copy; {new Date().getFullYear()} Mohamed Alaa. All rights reserved.
         </p>
       </footer>
     </div>

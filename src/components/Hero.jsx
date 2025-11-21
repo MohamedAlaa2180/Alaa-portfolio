@@ -37,9 +37,7 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-5xl sm:text-6xl font-bold mb-4 text-gray-900 dark:text-white"
           >
-            <span className="text-primary opacity-50 font-mono">{`<`}</span>
             {personalInfo.name}
-            <span className="text-primary opacity-50 font-mono">{` />`}</span>
           </motion.h1>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}
@@ -66,7 +64,6 @@ const Hero = () => {
             >
               {personalInfo.title}
             </motion.span>
-            <span className="text-gray-400 dark:text-gray-500 font-mono ml-2">;</span>
           </motion.p>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}

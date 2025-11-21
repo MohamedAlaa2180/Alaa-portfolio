@@ -13,9 +13,7 @@ const Experience = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12 text-gradient"
         >
-          <span className="text-primary opacity-50 font-mono">{`{`}</span>
           Work Experience
-          <span className="text-primary opacity-50 font-mono">{`}`}</span>
         </motion.h2>
         
         <div className="space-y-8">
@@ -31,8 +29,7 @@ const Experience = () => {
               <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    <span className="text-primary opacity-30 font-mono text-base">{`const`}</span> {job.position}
-                    <span className="text-primary opacity-30 font-mono text-base ml-1">;</span>
+                    {job.position}
                   </h3>
                   <div className="flex items-center gap-2 text-primary font-semibold mb-2">
                     <Briefcase size={18} />

@@ -14,9 +14,7 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12 text-gradient"
         >
-          <span className="text-primary opacity-50 font-mono">{`<`}</span>
           Featured Projects
-          <span className="text-primary opacity-50 font-mono">{` />`}</span>
         </motion.h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -57,9 +55,7 @@ const Projects = () => {
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">
-                    <span className="text-primary opacity-30 font-mono text-sm">{`<`}</span>
                     {project.title}
-                    <span className="text-primary opacity-30 font-mono text-sm">{`/>`}</span>
                   </h3>
                   <ArrowRight 
                     size={20} 
