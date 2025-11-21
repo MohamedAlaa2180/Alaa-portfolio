@@ -35,9 +35,27 @@ const Hero = () => {
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="text-2xl sm:text-3xl text-gradient font-semibold mb-6"
+            className="text-2xl sm:text-3xl font-semibold mb-6"
           >
-            {personalInfo.title}
+            <motion.span
+              style={{
+                background: 'linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #8b5cf6, #3b82f6)',
+                backgroundSize: '200% auto',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+              }}
+              animate={{
+                backgroundPosition: ['0% center', '200% center'],
+              }}
+              transition={{
+                duration: 3,
+                repeat: Infinity,
+                ease: 'linear',
+              }}
+            >
+              {personalInfo.title}
+            </motion.span>
           </motion.p>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}
