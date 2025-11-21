@@ -13,7 +13,7 @@ export default {
         'dark-light': '#1e293b',
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Cascadia Code', 'Consolas', 'Monaco', 'monospace'],
         mono: ['Cascadia Code', 'Consolas', 'Monaco', 'monospace'],
       },
     },
