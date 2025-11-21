@@ -76,8 +76,14 @@ const Layout = ({ children }) => {
         {children}
       </main>
 
-      <footer className="bg-gray-50 dark:bg-dark-light py-8 text-center text-gray-600 dark:text-gray-400">
-        <p>&copy; {new Date().getFullYear()} Mohamed Alaa. All rights reserved.</p>
+      <footer className="bg-gray-50 dark:bg-dark-light py-8 text-center text-gray-600 dark:text-gray-400 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
+          <div className="absolute top-4 left-10 text-2xl font-mono text-primary">{`//`}</div>
+          <div className="absolute bottom-4 right-10 text-2xl font-mono text-secondary">{`/* */`}</div>
+        </div>
+        <p className="relative z-10">
+          <span className="font-mono text-primary opacity-50">{`//`}</span> {new Date().getFullYear()} Mohamed Alaa <span className="font-mono text-primary opacity-50">{`//`}</span>
+        </p>
       </footer>
     </div>
   );

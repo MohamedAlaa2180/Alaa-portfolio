@@ -12,7 +12,9 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12 text-gradient"
         >
+          <span className="text-primary opacity-50 font-mono">{`[`}</span>
           Skills & Technologies
+          <span className="text-primary opacity-50 font-mono">{`]`}</span>
         </motion.h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

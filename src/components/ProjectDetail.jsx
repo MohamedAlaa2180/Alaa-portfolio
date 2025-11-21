@@ -65,10 +65,13 @@ const ProjectDetail = () => {
 
         <div className="mb-8">
           <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
+            <span className="text-primary opacity-50 font-mono text-2xl sm:text-3xl">{`<`}</span>
             {project.title}
+            <span className="text-primary opacity-50 font-mono text-2xl sm:text-3xl">{` />`}</span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-6">
             {project.shortDescription}
+            <span className="text-gray-400 dark:text-gray-500 font-mono ml-2">;</span>
           </p>
 
           <div className="flex flex-wrap gap-4 mb-6">
@@ -127,7 +130,9 @@ const ProjectDetail = () => {
         {project.images.length > 0 && (
           <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <span className="text-primary opacity-50 font-mono">{`[`}</span>
               Screenshots
+              <span className="text-primary opacity-50 font-mono">{`]`}</span>
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {project.images.map((image, index) => (
@@ -170,7 +175,9 @@ const ProjectDetail = () => {
         {project.videos.length > 0 && (
           <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
             <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+              <span className="text-primary opacity-50 font-mono">{`{`}</span>
               Videos
+              <span className="text-primary opacity-50 font-mono">{`}`}</span>
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {project.videos.map((video, index) => {
@@ -207,7 +214,9 @@ const ProjectDetail = () => {
         {/* About the Project */}
         <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+            <span className="text-primary opacity-50 font-mono">{`/*`}</span>
             About the Project
+            <span className="text-primary opacity-50 font-mono">{`*/`}</span>
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             {project.description}
@@ -217,7 +226,8 @@ const ProjectDetail = () => {
         {/* Key Features */}
         <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-            Key Features
+            <span className="text-primary opacity-50 font-mono">{`const`}</span> Key Features
+            <span className="text-primary opacity-50 font-mono">{` =`}</span>
           </h2>
           <ul className="grid md:grid-cols-2 gap-3">
             {project.features.map((feature, index) => (
@@ -232,7 +242,8 @@ const ProjectDetail = () => {
         {/* Achievements */}
         <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 mb-8">
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-            Achievements
+            <span className="text-primary opacity-50 font-mono">{`export`}</span> Achievements
+            <span className="text-primary opacity-50 font-mono">{`;`}</span>
           </h2>
           <ul className="grid md:grid-cols-2 gap-3">
             {project.achievements.map((achievement, index) => (
@@ -247,7 +258,8 @@ const ProjectDetail = () => {
         {/* Project Info - At the bottom */}
         <div className="bg-gray-50 dark:bg-dark-light rounded-xl p-6">
           <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">
-            Project Information
+            <span className="text-primary opacity-50 font-mono">{`interface`}</span> Project Information
+            <span className="text-primary opacity-50 font-mono">{` {}`}</span>
           </h2>
 
           <div className="grid md:grid-cols-3 gap-6">

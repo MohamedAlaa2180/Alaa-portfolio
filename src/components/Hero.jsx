@@ -4,8 +4,16 @@ import { personalInfo } from '../data';
 
 const Hero = () => {
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-dark dark:to-dark-light">
-      <div className="max-w-4xl mx-auto text-center">
+    <section id="about" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-dark dark:to-dark-light relative overflow-hidden">
+      <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
+        <div className="absolute top-20 left-10 text-6xl font-mono text-primary">{`</>`}</div>
+        <div className="absolute top-40 right-20 text-4xl font-mono text-secondary">{`{}`}</div>
+        <div className="absolute bottom-40 left-20 text-5xl font-mono text-primary">{`();`}</div>
+        <div className="absolute bottom-20 right-10 text-6xl font-mono text-secondary">{`=>`}</div>
+        <div className="absolute top-1/2 left-1/4 text-3xl font-mono text-primary">{`[]`}</div>
+        <div className="absolute top-1/3 right-1/4 text-4xl font-mono text-secondary">{`===`}</div>
+      </div>
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="mb-8">
           <motion.div 
             initial={{ scale: 0, opacity: 0 }}
@@ -29,7 +37,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-5xl sm:text-6xl font-bold mb-4 text-gray-900 dark:text-white"
           >
+            <span className="text-primary opacity-50 font-mono">{`<`}</span>
             {personalInfo.name}
+            <span className="text-primary opacity-50 font-mono">{` />`}</span>
           </motion.h1>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}
@@ -56,6 +66,7 @@ const Hero = () => {
             >
               {personalInfo.title}
             </motion.span>
+            <span className="text-gray-400 dark:text-gray-500 font-mono ml-2">;</span>
           </motion.p>
           <motion.p 
             initial={{ y: 20, opacity: 0 }}

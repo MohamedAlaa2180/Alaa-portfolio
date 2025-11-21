@@ -16,5 +16,16 @@
   .text-gradient {
     @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
   }
+  
+  .code-pattern {
+    background-image: 
+      repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(59, 130, 246, 0.03) 2px,
+        rgba(59, 130, 246, 0.03) 4px
+      );
+  }
 }
 
