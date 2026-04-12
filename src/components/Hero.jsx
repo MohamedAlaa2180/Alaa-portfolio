@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, Phone, MapPin, Download, Code } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data';
+import { btnSoundProps, externalLinkSoundProps, playClick, playHover } from '../uiSounds';
 
 const Hero = () => {
   return (
@@ -84,6 +85,7 @@ const Hero = () => {
           <a
             href={`mailto:${personalInfo.email}`}
             className="flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium shadow-md hover:shadow-lg"
+            {...btnSoundProps()}
           >
             <Mail size={20} />
             {personalInfo.email}
@@ -91,6 +93,7 @@ const Hero = () => {
           <a
             href={`tel:${personalInfo.phone}`}
             className="flex items-center gap-2 px-6 py-3 bg-white dark:bg-dark-light text-gray-900 dark:text-white rounded-lg hover:bg-gray-100 dark:hover:bg-dark transition-colors font-medium shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
+            {...btnSoundProps()}
           >
             <Phone size={20} />
             {personalInfo.phone}
@@ -113,6 +116,8 @@ const Hero = () => {
             className="flex items-center gap-2 px-8 py-3 bg-gradient-to-r from-primary to-secondary text-white rounded-lg hover:shadow-xl transition-all font-semibold"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onMouseEnter={() => playHover()}
+            onMouseDown={(e) => e.button === 0 && playClick()}
           >
             <Download size={20} />
             Download Resume
@@ -131,6 +136,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
             aria-label="LinkedIn"
+            {...externalLinkSoundProps()}
           >
             <Linkedin size={24} />
           </a>
@@ -140,6 +146,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
             aria-label="GitHub"
+            {...externalLinkSoundProps()}
           >
             <Github size={24} />
           </a>
@@ -149,6 +156,7 @@ const Hero = () => {
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-white dark:bg-dark-light hover:bg-primary hover:text-white transition-all shadow-md hover:shadow-lg border border-gray-200 dark:border-gray-700"
             aria-label="HackerRank"
+            {...externalLinkSoundProps()}
           >
             <Code size={24} />
           </a>

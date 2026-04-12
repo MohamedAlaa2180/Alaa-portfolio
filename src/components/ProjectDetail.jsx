@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Calendar, Building2, User } from 'lucide-react';
 import { projects } from '../data';
 import ImageLightbox from './ImageLightbox';
+import { btnSoundProps, externalLinkSoundProps, playCloseCard, playHover, playOpenCard } from '../uiSounds';
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
@@ -20,11 +21,13 @@ const ProjectDetail = () => {
   };
 
   const openLightbox = (index) => {
+    playOpenCard();
     setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
 
   const closeLightbox = () => {
+    playCloseCard();
     setLightboxOpen(false);
   };
 
@@ -42,8 +45,10 @@ const ProjectDetail = () => {
         <div className="text-center">
           <h2 className="text-2xl font-bold mb-4">Project Not Found</h2>
           <button
+            type="button"
             onClick={handleBackClick}
             className="text-primary hover:underline"
+            {...btnSoundProps()}
           >
             Return to Projects
           </button>
@@ -56,8 +61,10 @@ const ProjectDetail = () => {
     <div className="min-h-screen bg-white dark:bg-dark py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <button
+          type="button"
           onClick={handleBackClick}
           className="flex items-center gap-2 text-primary hover:text-secondary transition-colors mb-8 font-medium"
+          {...btnSoundProps()}
         >
           <ArrowLeft size={20} />
           Back to Projects
@@ -78,6 +85,7 @@ const ProjectDetail = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+                {...externalLinkSoundProps()}
               >
                 <ExternalLink size={16} />
                 Google Play
@@ -89,6 +97,7 @@ const ProjectDetail = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+                {...externalLinkSoundProps()}
               >
                 <ExternalLink size={16} />
                 App Store
@@ -100,6 +109,7 @@ const ProjectDetail = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-secondary text-white rounded-lg hover:bg-secondary/90 transition-colors"
+                {...externalLinkSoundProps()}
               >
                 <ExternalLink size={16} />
                 Meta Quest
@@ -132,8 +142,10 @@ const ProjectDetail = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {project.images.map((image, index) => (
                 <button
+                  type="button"
                   key={index}
                   onClick={() => openLightbox(index)}
+                  onMouseEnter={() => playHover()}
                   className="aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden group cursor-pointer relative"
                 >
                   <img

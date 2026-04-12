@@ -1,3 +1,5 @@
+import { btnSoundProps } from '../uiSounds';
+
 const Navigation = () => {
   return (
     <nav className="hidden md:block">
@@ -7,6 +9,7 @@ const Navigation = () => {
             <a
               href={`#${item.toLowerCase()}`}
               className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
+              {...btnSoundProps()}
             >
               {item}
             </a>

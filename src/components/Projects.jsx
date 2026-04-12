@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { projects } from '../data';
+import { projectCardSoundProps } from '../uiSounds';
 
 const Projects = () => {
   return (
@@ -29,6 +30,7 @@ const Projects = () => {
               <Link
                 to={`/project/${project.id}`}
                 className="bg-white dark:bg-dark rounded-xl overflow-hidden hover:shadow-xl transition-all hover:scale-105 border border-gray-200 dark:border-gray-800 flex flex-col group block"
+                {...projectCardSoundProps()}
               >
               <div className="h-48 bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center relative overflow-hidden">
                 {project.thumbnail ? (

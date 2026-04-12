@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import Navigation from './Navigation';
+import { btnSoundProps } from '../uiSounds';
 
 const Layout = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
@@ -26,7 +27,11 @@ const Layout = ({ children }) => {
               {isHomePage ? (
                 <Navigation />
               ) : (
-                <Link to="/" className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium">
+                <Link
+                  to="/"
+                  className="text-gray-600 dark:text-gray-300 hover:text-primary dark:hover:text-primary transition-colors font-medium"
+                  {...btnSoundProps()}
+                >
                   ← Back to Portfolio
                 </Link>
               )}
@@ -34,18 +39,22 @@ const Layout = ({ children }) => {
             
             <div className="flex items-center gap-4">
               <button
+                type="button"
                 onClick={() => setDarkMode(!darkMode)}
                 className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
                 aria-label="Toggle dark mode"
+                {...btnSoundProps()}
               >
                 {darkMode ? <Sun size={20} /> : <Moon size={20} />}
               </button>
               
               {isHomePage && (
                 <button
+                  type="button"
                   onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                   className="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
                   aria-label="Toggle menu"
+                  {...btnSoundProps()}
                 >
                   {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
                 </button>
@@ -61,7 +70,9 @@ const Layout = ({ children }) => {
                     key={item}
                     href={`#${item.toLowerCase()}`}
                     className="px-4 py-2 rounded-lg hover:bg-gray-100 dark:hover:bg-dark-light transition-colors"
-                    onClick={() => setMobileMenuOpen(false)}
+                    {...btnSoundProps({
+                      onClick: () => setMobileMenuOpen(false),
+                    })}
                   >
                     {item}
                   </a>
