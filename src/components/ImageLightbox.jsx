@@ -1,5 +1,6 @@
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useEffect } from 'react';
+import { playClick, playHover } from '../uiSounds';
 
 const ImageLightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
   useEffect(() => {
@@ -25,9 +26,11 @@ const ImageLightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
     <div className="fixed inset-0 z-[100] bg-black/95 flex items-center justify-center">
       {/* Close button */}
       <button
+        type="button"
         onClick={onClose}
         className="absolute top-4 right-4 p-2 text-white hover:bg-white/10 rounded-full transition-colors z-10"
         aria-label="Close"
+        onMouseEnter={() => playHover()}
       >
         <X size={32} />
       </button>
@@ -35,7 +38,10 @@ const ImageLightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
       {/* Previous button */}
       {images.length > 1 && (
         <button
+          type="button"
           onClick={onPrev}
+          onMouseEnter={() => playHover()}
+          onMouseDown={(e) => e.button === 0 && playClick()}
           className="absolute left-4 top-1/2 -translate-y-1/2 p-2 text-white hover:bg-white/10 rounded-full transition-colors z-10"
           aria-label="Previous image"
         >
@@ -60,7 +66,10 @@ const ImageLightbox = ({ images, currentIndex, onClose, onNext, onPrev }) => {
       {/* Next button */}
       {images.length > 1 && (
         <button
+          type="button"
           onClick={onNext}
+          onMouseEnter={() => playHover()}
+          onMouseDown={(e) => e.button === 0 && playClick()}
           className="absolute right-4 top-1/2 -translate-y-1/2 p-2 text-white hover:bg-white/10 rounded-full transition-colors z-10"
           aria-label="Next image"
         >
