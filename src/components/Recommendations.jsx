@@ -179,29 +179,20 @@ export default function Recommendations() {
           )}
 
           {!loadingList && items.length > 0 && (
-            <>
+            <div className="flex items-center gap-2 sm:gap-3">
               <button
                 type="button"
                 aria-label="Scroll left"
-                className="hidden sm:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 -ml-2 p-2 rounded-full bg-white dark:bg-dark-light shadow border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
+                className="hidden sm:inline-flex shrink-0 self-center p-2 rounded-full bg-white dark:bg-dark-light shadow border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
                 onClick={() => scrollBy(-1)}
                 {...btnSoundProps()}
               >
                 <ChevronLeft size={22} className="text-gray-700 dark:text-gray-200" />
               </button>
-              <button
-                type="button"
-                aria-label="Scroll right"
-                className="hidden sm:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 -mr-2 p-2 rounded-full bg-white dark:bg-dark-light shadow border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
-                onClick={() => scrollBy(1)}
-                {...btnSoundProps()}
-              >
-                <ChevronRight size={22} className="text-gray-700 dark:text-gray-200" />
-              </button>
 
               <div
                 ref={scrollRef}
-                className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory -mx-1 px-1"
+                className="flex min-w-0 flex-1 gap-6 overflow-x-auto pb-4 snap-x snap-mandatory"
                 style={{ scrollbarWidth: 'thin' }}
               >
                 {items.map((rec) => (
@@ -245,7 +236,17 @@ export default function Recommendations() {
                   </article>
                 ))}
               </div>
-            </>
+
+              <button
+                type="button"
+                aria-label="Scroll right"
+                className="hidden sm:inline-flex shrink-0 self-center p-2 rounded-full bg-white dark:bg-dark-light shadow border border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-800"
+                onClick={() => scrollBy(1)}
+                {...btnSoundProps()}
+              >
+                <ChevronRight size={22} className="text-gray-700 dark:text-gray-200" />
+              </button>
+            </div>
           )}
         </div>
 
