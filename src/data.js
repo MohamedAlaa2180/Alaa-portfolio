@@ -20,6 +20,7 @@ export const experience = [
       "Led a team of 4 mid-level and senior Unity developers, ensuring high-quality deliverables and continuous team growth",
       "Collaborated with product owners to define sprint goals, break down features into tasks, and plan agile sprints effectively",
       "Provided technical mentorship to junior developers across multiple teams, supporting their growth and maintaining code standards",
+      "Guided 6 Unity developers during a 3-month internship and participated in their graduation project",
       "Improved company-wide development workflow by introducing modern technologies, tools, and strategic process optimizations",
       "Designed scalable development architectures for new projects and refactored legacy codebases to improve maintainability and performance"
     ]
