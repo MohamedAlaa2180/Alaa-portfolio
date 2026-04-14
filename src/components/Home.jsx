@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Experience from './Experience';
 import Projects from './Projects';
 import Skills from './Skills';
+import Recommendations from './Recommendations';
 
 const Home = () => {
   const location = useLocation();
@@ -24,6 +25,7 @@ const Home = () => {
       <Hero />
       <Experience />
       <Projects />
+      <Recommendations />
       <Skills />
     </>
   );

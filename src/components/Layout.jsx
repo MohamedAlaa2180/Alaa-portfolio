@@ -65,7 +65,7 @@ const Layout = ({ children }) => {
           {isHomePage && mobileMenuOpen && (
             <nav className="md:hidden py-4 border-t border-gray-200 dark:border-gray-800">
               <div className="flex flex-col gap-2">
-                {['About', 'Experience', 'Projects', 'Skills'].map((item) => (
+                {['About', 'Experience', 'Projects', 'Recommendations', 'Skills'].map((item) => (
                   <a
                     key={item}
                     href={`#${item.toLowerCase()}`}
