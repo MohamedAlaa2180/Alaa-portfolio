@@ -192,8 +192,7 @@ export default function Recommendations() {
 
               <div
                 ref={scrollRef}
-                className="flex min-w-0 flex-1 gap-6 overflow-x-auto pb-4 snap-x snap-mandatory"
-                style={{ scrollbarWidth: 'thin' }}
+                className="flex min-w-0 flex-1 gap-6 overflow-x-auto pb-4 snap-x snap-mandatory [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
               >
                 {items.map((rec) => (
                   <article
