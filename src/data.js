@@ -163,6 +163,61 @@ export const projects = [
     }
   },
   {
+    id: "dxb",
+    title: "DXB",
+    shortDescription: "Interactive 3D facility walkthrough with VR-first presentation and NetEco-backed live operations dashboards for GITEX-style demos and stakeholder tours.",
+    description: "DXB is an interactive 3D experience built for showcase and operations storytelling: visitors move through a modeled facility—from exterior and security to the data hall, power, cooling, and NOC-style areas—while UI ties what they see to real operational concepts. The product targets GITEX-style demos and stakeholder walkthroughs, with Meta Quest VR as the primary immersive mode and a Windows desktop path using separate PC-oriented content.\n\nOn the engineering side, the app connects to Schneider Electric NetEco-style services (login session, power, domain energy, environment, alarms, doors) so dashboards and rack-facing UI can reflect live or realistic facility data, not only static geometry. Scene flow, teleport/loading, and controller-driven menus support a guided tour without breaking presence in VR.",
+    thumbnail: "/Alaa-portfolio/projects/dxb/thumbnail.jpg",
+    platform: ["Meta Quest (Android, VR)", "Windows (64-bit) PC"],
+    technologies: [
+      "Unity",
+      "C#",
+      "Universal Render Pipeline (URP)",
+      "OpenXR",
+      "Meta XR SDK",
+      "XR Interaction Toolkit",
+      "Unity Input System",
+      "Cinemachine",
+      "TextMeshPro",
+      "Unity glTFast",
+      "DOTween",
+      "Odin Inspector",
+      "UniTask",
+      "NetEco HTTP/API integration"
+    ],
+    tags: ["Unity", "Virtual Reality", "OpenXR", "Meta Quest", "Digital Twin"],
+    role: "Lead Unity Engineer",
+    duration: "2025",
+    company: "Genesis Creations",
+    features: [
+      "Multi-zone facility walkthrough with dedicated scenes for data center, IT equipment, power control, battery, MV, pump, NOC, security, exterior, plus main menu and staging flow",
+      "VR-first interaction using Meta XR stack with OpenXR and XR Interaction Toolkit—controller actions for menus, scene changes, and walkthrough toggles",
+      "Cross-platform presentation with runtime switching between VR (Android / Quest) and PC (Windows) object sets for correct inputs and rig per build",
+      "Live operations dashboards via NetEco-backed services for power, domain energy, environment, domain alarms, and doors; session handling and typed C# API layer",
+      "Dynamic facility UI with dashboard panels on periodic refresh and rack-oriented updaters for power, temperature, CPU, memory, network, and uptime",
+      "Interaction polish: door animations and flows, outline/highlight system, world-space UI and billboarding, Cinemachine-style presentation, glTFast for efficient 3D where used",
+      "Async, production-minded code with UniTask for non-blocking login/API work and dummy service implementations for offline or demo-safe runs"
+    ],
+    achievements: [
+      "Delivered end-to-end multi-scene facility tour suited for Quest VR and Windows desktop stakeholders",
+      "Integrated NetEco-style services for session login and live facility data across power, energy, environment, alarms, and doors",
+      "Built typed async API layer in C# with UniTask and offline-capable dummy implementations",
+      "Shipped VR interaction and guided tour flow with OpenXR, Meta XR SDK, and XR Interaction Toolkit"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/dxb/screenshot1.jpg",
+      "/Alaa-portfolio/projects/dxb/screenshot2.jpg",
+      "/Alaa-portfolio/projects/dxb/screenshot3.jpg",
+      "/Alaa-portfolio/projects/dxb/screenshot4.jpg"
+    ],
+    videos: [],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "zombieleta",
     title: "Zombieleta",
     shortDescription: "Fast-paced multiplayer action game where humans battle zombies in intense survival matches.",
