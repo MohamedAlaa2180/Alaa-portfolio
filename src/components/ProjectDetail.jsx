@@ -221,7 +221,7 @@ const ProjectDetail = () => {
           <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
             About the Project
           </h2>
-          <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+          <p className="text-gray-700 dark:text-gray-300 leading-relaxed whitespace-pre-line">
             {project.description}
           </p>
         </div>
