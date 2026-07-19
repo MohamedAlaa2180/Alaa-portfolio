@@ -588,5 +588,53 @@ export const recommendations = [
       "https://media.licdn.com/dms/image/v2/D4D03AQEjSxMnswF3qw/profile-displayphoto-scale_400_400/B4DZeyAxdKHMAg-/0/1751038236975?e=1785974400&v=beta&t=_Y6Wq5QxA07sjbcLnLUq15i16f2gFofie8MqYLeOPxg",
     linkedin: "https://www.linkedin.com/in/mohamed-rabea3/",
   },
+  {
+    id: "mohab-abd-elmohsen",
+    name: "Mohab Abd ElMohsen",
+    title: "Unity Developer @ Genesis Creations",
+    date: "April 14, 2026",
+    relation: "Reported to you directly",
+    message:
+      "I have the pleasure of working with Mohamed and can confidently say he’s a great person to work with. He brings strong technical knowledge, clear thinking when solving problems, and always maintains a positive and supportive attitude within the team.\n\nHe’s reliable, collaborative, and always willing to help others or share his experience when needed. Beyond being a great colleague, he is also someone I consider a friend.\n\nWorking with him is a great experience, and I truly appreciate the professionalism and dedication he brings to his work.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQExSnkKeAWGpg/profile-displayphoto-shrink_400_400/B4DZZAlcusGkAs-/0/1744840282287?e=1785974400&v=beta&t=DekLS0hC7sLPVs3ubtxYLbuaimvn7vV-9xa6g_AN39U",
+    linkedin: "https://www.linkedin.com/in/hobapro/",
+  },
+  {
+    id: "adham-ayman",
+    name: "Adham Ayman",
+    title: "Unity Game Developer @ Umami Games",
+    date: "November 30, 2025",
+    relation: "Reported to you directly",
+    message:
+      "I had the opportunity to work with Mohamed at Umami Games, and he is truly an outstanding senior developer. He has a deep technical understanding, approaches problems with clarity, and always delivers high quality solutions. What I appreciated most was how supportive and approachable he was—always willing to guide me, share his experience, and help me grow as a developer. His leadership, communication, and consistency make him a huge asset to any team. I highly recommend him for any senior or lead role.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQHoomms5Hmtug/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1669649121520?e=1785974400&v=beta&t=OZx17ZbXYjvVvm9unQlyNqCJHPEUavxHOdXWVwuqU-w",
+    linkedin: "https://www.linkedin.com/in/adham-ayman-b79109214/",
+  },
+  {
+    id: "Mohamed-Fathi ",
+    name: "Mohamed Fathi ",
+    title: "Senior 3D Generalist | Technical Artist @ Vhorus",
+    date: "November 30, 2025",
+    relation: "Mohamed worked with me on the same team",
+    message:
+      "I worked with Mohamed Alaa as a Game Designer, and we went through many challenges together during our project. He was always one of the quickest and most creative people when it came to solving problems and delivering tasks efficiently. His ideas were always smart and unique, and he consistently pushed the work forward.\n\nWorking with him was honestly one of the best periods of the project, and I truly enjoyed collaborating with him.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D35AQHoJ79i5lWuew/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1738522751034?e=1785063600&v=beta&t=v1n9j3_7eHFzMThP9OCRt-UPKhsSYhZ5qgLOL6atO_U",
+    linkedin: "https://www.linkedin.com/in/mohamed-fathi-ahmed/",
+  },
+  {
+    id: "omar-el-sayed",
+    name: "Omar El-Sayed",
+    title: "Product Manager | Game Designer | Game Producer @ Tamatem Games",
+    date: "May 3, 2024",
+    relation: "Managed you directly",
+    message:
+      "Having Mohamed on your programmers team will have a huge positive impact to the product you are working on. You would love to see how he delivers all his developed systems in Detailed-Oriented Diagrams and Flow-Charts and the tips & tricks he has up his sleeve in the Unity Engine.\n\nMohamed also mentored all the juniors programmers in the team and helped us in developing our well-established team of programmers.\n\nBeside all this, you definitely don't want to miss his cheerful spirit and the addition of his sense of humor to your working environment.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQFV58-KwNojJQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1691663660959?e=1785974400&v=beta&t=73rVG5zahCcMsMbWzIMbFvaTc15qJl99Uo1r56SJoF0",
+    linkedin: "https://www.linkedin.com/in/omarelsayed997/",
+  },
 ];
 
