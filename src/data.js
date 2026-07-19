@@ -109,7 +109,7 @@ export const projects = [
     title: "VRC - Virtual Interactive Cleanroom",
     shortDescription: "First-of-its-kind VR training platform in Canada for pharmacy professionals to master sterile compounding protocols.",
     description: "The Virtual Interactive Cleanroom (VRC) is a groundbreaking immersive VR training solution designed to help pharmacy professionals boost their sterile compounding skills through on-demand virtual training. This first-of-its-kind platform in Canada addresses the critical challenge of ensuring compliance and skill mastery in sterile compounding for hospital and compounding pharmacies. The system allows pharmacists and technicians to practice essential protocols including garbing, hand hygiene, and laminar flow hood cleaning in a realistic virtual environment with real-time feedback to ensure precision adherence to sterile protocols.",
-    thumbnail: "/Alaa-portfolio/projects/vrc/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/vrc/VRC_Thumbnail.jpg",
     platform: ["Meta Quest (VR)"],
     technologies: ["Unity", "C#", "Meta SDK", "Backend Services", "Custom VR Interaction System"],
     tags: ["VR", "Training", "Healthcare", "Simulation", "Educational"],
@@ -146,15 +146,15 @@ export const projects = [
       "Provided technical leadership and mentorship to development team"
     ],
     images: [
-      "/Alaa-portfolio/projects/vrc/screenshot1.jpg",
-      "/Alaa-portfolio/projects/vrc/screenshot2.jpg",
-      "/Alaa-portfolio/projects/vrc/screenshot3.jpg",
-      "/Alaa-portfolio/projects/vrc/screenshot4.jpg",
-      "/Alaa-portfolio/projects/vrc/screenshot5.jpg",
-      "/Alaa-portfolio/projects/vrc/screenshot6.jpg"
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/vrc/VRC_Screenshot_6.jpg"
     ],
     videos: [
-      "/Alaa-portfolio/projects/vrc/video.mp4"
+      "/Alaa-portfolio/projects/vrc/VRC_Video.mp4"
     ],
     links: {
       playStore: "",
@@ -167,7 +167,7 @@ export const projects = [
     title: "DXB",
     shortDescription: "Interactive 3D facility walkthrough with VR-first presentation and NetEco-backed live operations dashboards for GITEX-style demos and stakeholder tours.",
     description: "DXB is an interactive 3D experience built for showcase and operations storytelling: visitors move through a modeled facility—from exterior and security to the data hall, power, cooling, and NOC-style areas—while UI ties what they see to real operational concepts. The product targets GITEX-style demos and stakeholder walkthroughs, with Meta Quest VR as the primary immersive mode and a Windows desktop path using separate PC-oriented content.\n\nOn the engineering side, the app connects to Schneider Electric NetEco-style services (login session, power, domain energy, environment, alarms, doors) so dashboards and rack-facing UI can reflect live or realistic facility data, not only static geometry. Scene flow, teleport/loading, and controller-driven menus support a guided tour without breaking presence in VR.",
-    thumbnail: "/Alaa-portfolio/projects/dxb/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/dxb/DXB_Thumbnail.jpg",
     platform: ["Meta Quest (Android, VR)", "Windows (64-bit) PC"],
     technologies: [
       "Unity",
@@ -205,10 +205,10 @@ export const projects = [
       "Shipped VR interaction and guided tour flow with OpenXR, Meta XR SDK, and XR Interaction Toolkit"
     ],
     images: [
-      "/Alaa-portfolio/projects/dxb/screenshot1.jpg",
-      "/Alaa-portfolio/projects/dxb/screenshot2.jpg",
-      "/Alaa-portfolio/projects/dxb/screenshot3.jpg",
-      "/Alaa-portfolio/projects/dxb/screenshot4.jpg"
+      "/Alaa-portfolio/projects/dxb/DXB_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/dxb/DXB_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/dxb/DXB_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/dxb/DXB_Screenshot_4.jpg"
     ],
     videos: [],
     links: {
@@ -222,7 +222,7 @@ export const projects = [
     title: "Zombieleta",
     shortDescription: "Fast-paced multiplayer action game where humans battle zombies in intense survival matches.",
     description: "Zombieleta is a thrilling multiplayer action game where players engage in an intense battle between humans and zombies. At the start of each match, all participants begin as humans; after 10 seconds, one player transforms into a zombie whose mission is to catch and convert the remaining humans. As more humans are turned into zombies, the challenge intensifies for the survivors, who must hide and employ strategic abilities to endure until the timer runs out.",
-    thumbnail: "/Alaa-portfolio/projects/zombieleta/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/zombieleta/Zombieleta_Thumbnail.jpg",
     platform: ["Android"],
     technologies: ["Unity", "C#", "Photon Unity Networking (Fusion)", "Unity Services"],
     tags: ["Multiplayer", "Action", "Mobile"],
@@ -246,12 +246,12 @@ export const projects = [
       "Created strategic depth through unique ability systems"
     ],
     images: [
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-48-33-595_orig.jpg",
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-48-58-866_orig.jpg",
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-49-08-082_orig.jpg",
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-02-703_orig.jpg",
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-16-264_orig.jpg",
-      "/Alaa-portfolio/projects/zombieleta/bandicam-2025-01-23-20-50-39-730_orig.jpg"
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/zombieleta/Zombieleta_Screenshot_6.jpg"
     ],
     videos: ["https://www.youtube.com/embed/h0EL8jTQM1k"],
     links: {
@@ -264,7 +264,7 @@ export const projects = [
     title: "Kortifo",
     shortDescription: "Multiplayer 2D football trivia card battle game with over 200,000 downloads across App Store and Google Play.",
     description: "Kortifo is a competitive multiplayer card battle game that blends football trivia with strategic card gameplay. Players build decks, answer football questions, and compete in real-time matches against thousands of players worldwide. The game features robust backend integration, dynamic mission systems, and seamless multiplayer experience powered by Unity Netcode.",
-    thumbnail: "/Alaa-portfolio/projects/kortifo/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/kortifo/Kortifo_Thumbnail.jpg",
     platform: ["Android", "iOS"],
     technologies: ["Unity", "C#", "Unity Netcode", "Unity Cloud Code", "Unity IAP", "Firebase Remote Config", "Cloud Save", "Figma"],
     tags: ["Multiplayer", "Card Game", "Trivia", "Mobile"],
@@ -294,13 +294,13 @@ export const projects = [
       "Maintained 4.5+ star rating on Google Play Store"
     ],
     images: [
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-17-051_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-21-710_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-24-843_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-31-686_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-35-920_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-38-266_orig.jpg",
-      "/Alaa-portfolio/projects/kortifo/bandicam-2025-02-07-02-11-40-353_orig.jpg"
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_6.jpg",
+      "/Alaa-portfolio/projects/kortifo/Kortifo_Screenshot_7.jpg"
     ],
     videos: ["https://www.youtube.com/embed/DAhBdYbARYU"],
     links: {
@@ -313,7 +313,7 @@ export const projects = [
     title: "Rehlatie",
     shortDescription: "Educational 2D mobile game gamifying Islamic knowledge with over 150,000 downloads for younger audiences.",
     description: "Rehlatie is an educational 2D game that gamifies Islamic knowledge for younger audiences, making learning engaging and interactive through fun gameplay mechanics. The project focused heavily on performance optimization and scalable architecture using modern Unity features, with a comprehensive Firebase backend integration.",
-    thumbnail: "/Alaa-portfolio/projects/rehlatie/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/rehlatie/Rehlatie_Thumbnail.jpg",
     platform: ["Android", "iOS"],
     technologies: ["Unity", "C#", "Unity Addressables", "Firebase Cloud Functions", "Firebase Remote Config", "Firebase Crashlytics", "Firebase Analytics"],
     tags: ["Educational", "2D", "Mobile", "Islamic"],
@@ -343,14 +343,14 @@ export const projects = [
       "Provided technical mentorship to junior team members"
     ],
     images: [
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-47-415_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-53-958_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-56-073_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-14-59-176_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-02-581_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-09-175_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-15-412_orig.jpg",
-      "/Alaa-portfolio/projects/rehlatie/bandicam-2025-02-07-02-15-19-192_orig.jpg"
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_6.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_7.jpg",
+      "/Alaa-portfolio/projects/rehlatie/Rehlatie_Screenshot_8.jpg"
     ],
     videos: [],
     links: {
@@ -363,7 +363,7 @@ export const projects = [
     title: "Experience Makkah",
     shortDescription: "Cross-platform mobile VR simulation offering an immersive virtual Hajj journey with over 250,000 downloads.",
     description: "Experience Makkah is a groundbreaking cross-platform mobile VR application that offers users an immersive virtual Hajj journey. As the sole Unity developer, I handled the entire app development including VR camera systems, spatial audio implementation, and comprehensive platform-specific optimization for both Android and iOS. Built using Google Cardboard SDK, the app provides an accessible and deeply engaging spiritual experience optimized for mid-tier mobile devices.",
-    thumbnail: "/Alaa-portfolio/projects/experience-makkah/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Thumbnail.jpg",
     platform: ["Android", "iOS"],
     technologies: ["Unity", "C#", "Google Cardboard SDK", "Spatial Audio", "AR Foundation", "Vuforia"],
     tags: ["VR", "Mobile", "Simulation", "Educational"],
@@ -397,12 +397,12 @@ export const projects = [
       "Positive impact on Islamic education and Hajj preparation globally"
     ],
     images: [
-      "/Alaa-portfolio/projects/experience-makkah/unnamed.jpg",
-      "/Alaa-portfolio/projects/experience-makkah/unnamed (1).jpg",
-      "/Alaa-portfolio/projects/experience-makkah/unnamed (2).jpg",
-      "/Alaa-portfolio/projects/experience-makkah/unnamed (3).jpg",
-      "/Alaa-portfolio/projects/experience-makkah/unnamed (4).jpg",
-      "/Alaa-portfolio/projects/experience-makkah/unnamed (5).jpg"
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_6.jpg"
     ],
     videos: ["https://www.youtube.com/embed/7XONnbZy8wQ"],
     links: {
@@ -415,7 +415,7 @@ export const projects = [
     title: "Darbk Khdr (دربك خضر)",
     shortDescription: "Mobile & VR adventure game immersing players in rich Saudi Arabian cultural traditions and heritage.",
     description: "Darbk Khdr is a mobile and VR adventure game that immerses players in the rich traditions of Saudi Arabia. As the sole developer, I handled the complete development lifecycle from concept to deployment. The game offers an engaging experience highlighting cultural narratives and heritage, with players choosing between two characters, Majd and Yazid, to embark on an exciting adventure in the Saudi desert.",
-    thumbnail: "/Alaa-portfolio/projects/darbk-khdr/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Thumbnail.jpg",
     platform: ["Android", "Meta Quest (VR)"],
     technologies: ["Unity", "C#", "Adobe Photoshop", "Google Play Services", "Meta Quest SDK"],
     tags: ["Adventure", "VR", "Mobile", "Cultural", "Educational"],
@@ -446,11 +446,11 @@ export const projects = [
       "Cross-platform deployment showcasing technical versatility"
     ],
     images: [
-      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-52-974_orig.jpg",
-      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-55-229_orig.jpg",
-      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-57-191_orig.jpg",
-      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-19-59-811_orig.jpg",
-      "/Alaa-portfolio/projects/darbk-khdr/bandicam-2025-02-07-02-20-02-516_orig.jpg"
+      "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/darbk-khdr/DarbkKhidr_Screenshot_5.jpg"
     ],
     videos: [],
     links: {
@@ -464,7 +464,7 @@ export const projects = [
     title: "Tangram of 7",
     shortDescription: "2D puzzle game challenging players to solve classic tangram shapes with intuitive drag-and-drop mechanics.",
     description: "Tangram of 7 is a mind-training puzzle game where players create imaginative shapes and designs using seven simple, rotatable wooden-like pieces. As the sole developer, I designed the complete game mechanics, visual flow, and interaction patterns, ensuring smooth drag-and-drop functionality and device responsiveness. The game trains both right and left brain hemispheres through clever puzzle-solving challenges.",
-    thumbnail: "/Alaa-portfolio/projects/tangram/thumbnail.jpg",
+    thumbnail: "/Alaa-portfolio/projects/tangram/Tangram_Thumbnail.jpg",
     platform: ["Android", "iOS"],
     technologies: ["Unity", "C#", "SpriteShape", "Custom UI System"],
     tags: ["Puzzle", "2D", "Mobile", "Educational"],
@@ -495,11 +495,11 @@ export const projects = [
       "Created educational tool suitable for schools and childcare facilities"
     ],
     images: [
-      "/Alaa-portfolio/projects/tangram/unnamed.jpg",
-      "/Alaa-portfolio/projects/tangram/unnamed (1).jpg",
-      "/Alaa-portfolio/projects/tangram/unnamed (2).jpg",
-      "/Alaa-portfolio/projects/tangram/unnamed (3).jpg",
-      "/Alaa-portfolio/projects/tangram/unnamed (4).jpg"
+      "/Alaa-portfolio/projects/tangram/Tangram_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/tangram/Tangram_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/tangram/Tangram_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/tangram/Tangram_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/tangram/Tangram_Screenshot_5.jpg"
     ],
     videos: [],
     links: {
