@@ -575,3 +575,5 @@ export const certifications = [
   "Mobile Game Development Course"
 ];
 
+export const recommendations = [];
+
