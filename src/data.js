@@ -577,6 +577,18 @@ export const certifications = [
 
 export const recommendations = [
   {
+    id: "yousef-ismail",
+    name: "Yousef Ismail",
+    title: "Unity Developer @ Genesis Creations S.A.E",
+    date: "July 19, 2026",
+    relation: "Mohamed was senior to Yousef but didn’t manage Yousef directly",
+    message:
+      "It was great working with Mohamed Alaa, and I would like to state with confidence that he is one of the best leaders and game developers I have worked with.\n\nFirst of all, Mohamed has outstanding skills in analyzing complex technical problems, identifying their root causes, and proposing effective solutions. His problem-solving skills helped us many times overcome various obstacles without compromising development quality.\n\nSecondly, Mohamed is a great leader. He manages to create an atmosphere of mutual cooperation and learning for everybody, helping the team to learn new things and become better at what they do. He always mentors the team members and shares his experience.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4E03AQF5ankuphCyZA/profile-displayphoto-shrink_400_400/B4EZY1oYXpHMAg-/0/1744656503200?e=1785974400&v=beta&t=06VEF4mjxynXDSGeG1Fdi0oNuJKtDuhlPFg5HvE231w",
+    linkedin: "https://www.linkedin.com/in/yousef-ismail-7918b1242/",
+  },
+  {
     id: "mohamed-rabea",
     name: "Mohamed Rabea",
     title: "Unity Developer @ Genesis Creations",
