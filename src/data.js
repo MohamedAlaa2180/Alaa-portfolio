@@ -575,5 +575,18 @@ export const certifications = [
   "Mobile Game Development Course"
 ];
 
-export const recommendations = [];
+export const recommendations = [
+  {
+    id: "mohamed-rabea",
+    name: "Mohamed Rabea",
+    title: "Unity Developer @ Genesis Creations",
+    date: "April 15, 2026",
+    relation: "Reported to you directly",
+    message:
+      "I had the pleasure of working under Mohamed as a Unity Developer, and I can confidently say that a significant part of my growth came from his guidance and leadership.\n\nFrom our very first interaction, I was constantly learning. He has a strong ability to mentor and support his team, always knowing how to bring out the best in each individual. His leadership strikes a great balance between guidance and trust, especially early on, where his close follow-up and feedback helped me build a solid foundation in both technical and professional aspects.\n\nBeyond his technical expertise in Unity, what truly stands out is his ability to lead a team effectively, maintain high standards, and create an environment where improvement is continuous.\n\nI’m genuinely grateful for the experience of working with him.",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQEjSxMnswF3qw/profile-displayphoto-scale_400_400/B4DZeyAxdKHMAg-/0/1751038236975?e=1785974400&v=beta&t=_Y6Wq5QxA07sjbcLnLUq15i16f2gFofie8MqYLeOPxg",
+    linkedin: "https://www.linkedin.com/in/mohamed-rabea3/",
+  },
+];
 
