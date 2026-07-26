@@ -577,6 +577,30 @@ export const certifications = [
 
 export const recommendations = [
   {
+    id: "ahmed-abutahoun",
+    name: "Ahmed Abutahoun",
+    title: "Unity Developer @ Genesis Creations",
+    date: "July 23, 2026",
+    relation: "Mohamed was senior to Ahmed but didn’t manage Ahmed directly",
+    message:
+      "I had the privilege of having Mohamed Alaa as a lead during my bootcamp. Right from the get-go, he set a high standard with an early, thorough, and technical session, but what stood out most was his relentless support and approachable communication. While he wasn't my direct lead, he was always accessible for technical consultations and discussions.\n\nMohamed shined during the development of our bootcamp graduation game, stepping in to guide our work process; from planning, to assigning roles and tasks, and providing insightful code reviews that kept our work on track and pushed us consistently to write cleaner, more efficient code.\n\nBeyond his technical expertise, Mohamed is incredibly easy to get along with and has a natural sense of community among the team, bringing a positive, welcoming and collaborative energy that makes the workplace genuinely enjoyable. Any team looking for a deeply technical leader, a fantastic culture-add, and a mentor who knows how to guide a team to the finish line would be absolutely lucky to have him.",
+    image:
+      "https://media.licdn.com/dms/image/v2/C4D03AQF2VQnF2GWMVQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1642447037119?e=1786579200&v=beta&t=bqy-1Cb2eR_K2EZp7n_DF91Nlx64EphdAuPL0u1vIas",
+    linkedin: "https://www.linkedin.com/in/ahmed-abutahoun/",
+  },
+  {
+    id: "amjad-mohamed",
+    name: "Amjad Mohamed",
+    title: "Software Developer | Unity Developer @ Genesis Creations S.A.E | Author @ Udacity | ITI Graduate",
+    date: "July 20, 2026",
+    relation: "Reported to you directly",
+    message:
+      "I had the pleasure of working with Alaa on multiple projects during our time at Genesis. He has a rare ability to make complex workflows feel smooth and effortless. As a leader, Alaa is an exceptional listener who truly supports his team while keeping everyone aligned and motivated. I highly recommend him, he is an absolute asset who will bring immense value to any company fortunate enough to have him!",
+    image:
+      "https://media.licdn.com/dms/image/v2/D4D03AQETPqAwchBmkQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1730748897070?e=1786579200&v=beta&t=xhxRFn3ha988YsX_iUeheRKtDZU7ivyExvdbpcMBbXQ",
+    linkedin: "https://www.linkedin.com/in/amjadmohamed/",
+  },
+  {
     id: "yousef-ismail",
     name: "Yousef Ismail",
     title: "Unity Developer @ Genesis Creations S.A.E",
