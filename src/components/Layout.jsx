@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Moon, Sun, Menu, X } from 'lucide-react';
 import Navigation from './Navigation';
+import ChatWidget from './ChatWidget';
 import { btnSoundProps } from '../uiSounds';
 
 const Layout = ({ children }) => {
@@ -86,6 +87,8 @@ const Layout = ({ children }) => {
       <main className="pt-16">
         {children}
       </main>
+
+      <ChatWidget />
 
       <footer className="bg-gray-50 dark:bg-dark-light py-8 text-center text-gray-600 dark:text-gray-400 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5 dark:opacity-10 pointer-events-none">
