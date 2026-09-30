@@ -3,7 +3,7 @@ import { MessageCircle, Send, X } from 'lucide-react';
 import { btnSoundProps, playCloseCard, playOpenCard } from '../uiSounds';
 
 const CHAT_API_URL = (
-  import.meta.env.VITE_CHAT_API_URL || 'https://portfolio-assistant.onrender.com'
+  import.meta.env.VITE_CHAT_API_URL || 'https://portfolio-assistant-4024.onrender.com'
 ).replace(/\/$/, '');
 
 const SUGGESTIONS = [
