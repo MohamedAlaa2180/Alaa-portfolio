@@ -160,6 +160,64 @@ export const projects = [
     }
   },
   {
+    id: "the-last-runner",
+    title: "The Last Runner",
+    shortDescription: "3D endless runner on a stylized city street. Switch lanes, jump, and slide to stay alive and collect coins.",
+    description: "The Last Runner is a lane-based endless runner built in Unity 6. A character runs down a repeating urban street, dodging obstacles and picking up coin lines while the road recycles behind the camera so the run never ends. The player stays in place while the world streams toward them.\n\nThe bend in the road is visual only. A custom URP lit shader curves the world around the player, while collisions and movement stay on a flat track. Game flow is driven by a state machine and an event bus, so movement, UI, audio, and animation stay independent of each other.",
+    thumbnail: "/Alaa-portfolio/projects/the-last-runner/TheLastRunner_Thumbnail.jpg",
+    platform: ["PC (Windows)"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "Cinemachine 3",
+      "Unity Input System",
+      "uGUI",
+      "TextMesh Pro",
+      "Animator",
+      "DOTween",
+      "Reflex",
+      "Custom HLSL shader"
+    ],
+    tags: ["Endless Runner", "3D", "Shaders", "Object Pooling", "PC"],
+    role: "Solo Developer",
+    duration: "2026 · v0.1.0",
+    company: "Personal Project",
+    features: [
+      "Three-lane movement: switch lanes, jump with a short coyote-time window, and slide by shrinking the collider to pass under overhead obstacles",
+      "Endless street: road segments, obstacles, and coins spawn ahead and return to object pools once they fall behind the camera",
+      "Two obstacle types: low obstacles must be jumped, and overhead barriers must be slid under",
+      "Coins spawn in short lines. Collecting them updates the HUD, plays a shine effect, and raises the coin sound pitch for a short combo",
+      "The run starts with three lives. A hit freezes the game and opens a collision screen so the player can spend a life and continue after a countdown, or restart",
+      "Continuing grants a brief invulnerability window",
+      "Start screen, a 3–2–1 countdown, pause, and restart. Input is locked while the game is paused or the player is stunned",
+      "Run, jump, slide, and stun animations are driven from gameplay events",
+      "A custom URP lit shader bends the street around the camera without changing gameplay positions",
+      "Music and sound effects go through an audio mixer, and sound effects use a pooled set of sources",
+      "Keyboard controls: A / Left and D / Right to change lanes, Space, W, or Up to jump, S or Down to slide, Escape to pause"
+    ],
+    achievements: [
+      "Built a lane-based endless runner where the world streams toward a stationary player and recycled segments never end the street",
+      "Separated the curved-world look from gameplay with a custom HLSL lit shader, so collisions stay on a flat track",
+      "Drove movement, UI, audio, and animation from a state machine and event bus so those systems stay independent",
+      "Pooled road segments, obstacles, coins, and sound sources to keep spawning cheap during a long run",
+      "Shipped a portfolio build with lives, a continue countdown, invulnerability, and coyote-time jumps"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/the-last-runner/TheLastRunner_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/the-last-runner/TheLastRunner_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/the-last-runner/TheLastRunner_Screenshot_3.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/the-last-runner/TheLastRunner_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "vrc",
     title: "VRC - Virtual Interactive Cleanroom",
     shortDescription: "First-of-its-kind VR training platform in Canada for pharmacy professionals to master sterile compounding protocols.",
