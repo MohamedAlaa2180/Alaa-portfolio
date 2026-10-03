@@ -104,6 +104,62 @@ export const experience = [
 
 export const projects = [
   {
+    id: "gaming-room",
+    title: "Gaming Room VR",
+    shortDescription: "Playable Meta Quest game room where you walk around, grab objects with your hands, play pool, and throw darts.",
+    description: "Gaming Room VR is a playable Meta Quest experience: a stylized multi-room game space where you walk around, pick up objects with your hands, play pool, and throw darts. Built in Unity 6 with the Universal Render Pipeline, it uses Meta's Interaction SDK for hand grabbing, throw physics, and teleport locomotion.\n\nThe pool cue is two-handed. The rear hand strokes while the forward hand is a bridge the shaft slides through. A strike assist uses tip speed to drive the ball along the cue axis, so glancing hits still travel forward, and shaft contact with the balls is ignored. Darts scale their release velocity for a readable throw, stick when the tip hits the board within a set angle, and pull back out when grabbed. Stylized hand meshes are calibrated and driven from the Interaction SDK hand skeleton, including a bone layout different from the default OpenXR hand.",
+    thumbnail: "/Alaa-portfolio/projects/gaming-room/GamingRoom_Thumbnail.jpg",
+    platform: ["Meta Quest (Horizon OS)", "Android (ARM64)"],
+    technologies: [
+      "Unity 6 (6000.4)",
+      "C#",
+      "Universal Render Pipeline (URP)",
+      "OpenXR",
+      "Unity XR Management",
+      "Meta XR Core SDK",
+      "Meta Interaction SDK (v205)",
+      "Unity Input System",
+      "Unity Physics"
+    ],
+    tags: ["VR", "Meta Quest", "Hand Tracking", "Billiards", "Darts", "Prototype"],
+    role: "Solo Developer",
+    duration: "2026 · v0.1.0",
+    company: "Personal Project",
+    features: [
+      "Two-handed pool cue: the rear hand strokes while the forward hand is a bridge the shaft slides through",
+      "Cue strike assist driven by tip speed along the cue axis, so glancing hits still travel forward",
+      "Shaft contact with the balls is ignored so only the cue tip strikes",
+      "Full billiard table with sixteen balls and six pockets",
+      "Throwable darts with release velocity scaled for a readable throw",
+      "A dart sticks when the tip hits the board within a set angle, and grabbing it pulls it back out",
+      "Custom stylized hand meshes calibrated and driven from the Interaction SDK hand skeleton",
+      "Hand skeleton uses a different bone layout from the default OpenXR hand",
+      "Hand-grab poses for the cue, darts, and other props",
+      "Teleport locomotion across the rooms",
+      "Quest-ready rendering with URP, baked lightmaps, light probes, a reflection probe, and foveated rendering"
+    ],
+    achievements: [
+      "Shipped a playable Quest prototype with hand tracking, grab poses, and teleport locomotion",
+      "Built a two-handed cue whose shaft slides through a bridge hand, with strike assist that keeps shots traveling along the cue",
+      "Implemented dart throw, stick, and pull-out behavior from release velocity and tip contact angle",
+      "Drove custom hand meshes from the Meta Interaction SDK skeleton instead of the default OpenXR hand layout",
+      "Set up Quest rendering on URP with baked global illumination, light probes, a reflection probe, and foveated rendering"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/gaming-room/GamingRoom_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/gaming-room/GamingRoom_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/gaming-room/GamingRoom_Screenshot_3.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/gaming-room/GamingRoom_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "vrc",
     title: "VRC - Virtual Interactive Cleanroom",
     shortDescription: "First-of-its-kind VR training platform in Canada for pharmacy professionals to master sterile compounding protocols.",
