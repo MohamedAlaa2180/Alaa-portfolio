@@ -619,6 +619,57 @@ export const projects = [
       playStore: "https://play.google.com/store/apps/details?id=com.Vhorus.TangramOf7&hl=en_US",
       appStore: "https://apps.apple.com/eg/app/tangram-of-7/id1591046876?l=ar"
     }
+  },
+  {
+    id: "egyptian-car-pricer",
+    category: "ai",
+    title: "Egyptian Car Pricer",
+    shortDescription: "Fine-tuned Qwen2.5-3B that estimates an Egyptian-market asking price in EGP from a short spec sheet.",
+    description: "Egyptian Car Pricer estimates a classified-ad asking price in Egyptian pounds from brand, model, year, mileage, fuel, and transmission. It fine-tunes Qwen/Qwen2.5-3B with QLoRA on prompt/completion pairs from the Egyptian cars dataset, then serves the adapter locally.\n\nLabeled Hub train and validation rows are cleaned and split into a held-out validation set and a 1,000-row test set. The Hub test split is unused because every completion is 0. The lite training run is one epoch on 8,000 rows. A local FastAPI form loads the base model in 4-bit on the GPU and attaches the step-500 LoRA checkpoint. Outputs are listing-style estimates, not appraisals.",
+    thumbnail: "/Alaa-portfolio/projects/egyptian-car-pricer/ECP_Thumbnail.jpg",
+    platform: ["Local (Windows, NVIDIA GPU)"],
+    technologies: [
+      "Python",
+      "Qwen2.5-3B",
+      "QLoRA",
+      "PEFT",
+      "Transformers",
+      "bitsandbytes",
+      "TRL",
+      "FastAPI",
+      "Hugging Face Datasets"
+    ],
+    tags: ["LLM", "QLoRA", "Fine-tuning", "Price estimation"],
+    role: "Solo Developer",
+    duration: "2026",
+    company: "Personal Project",
+    features: [
+      "Spec-sheet prompt: brand, model, year, mileage, fuel, and transmission, ending with “Price is EGP”",
+      "QLoRA fine-tune of Qwen/Qwen2.5-3B in 4-bit NF4, not the Instruct checkpoint",
+      "Cleaned Egyptian classified-ad data with held-out validation and a 1,000-row test set",
+      "Lite training run: one epoch on 8,000 rows, best checkpoint at step 500",
+      "Eval against the train mean, the train median, the unadapted base model, and the adapter",
+      "Local predict form that loads the 4-bit model and LoRA adapter on the GPU"
+    ],
+    achievements: [
+      "Trained a small open model to continue a spec sheet with an integer EGP asking price",
+      "Kept the same 1,000 test cars out of both the lite and full training sets",
+      "Shipped a local form on an RTX 3050 that runs the base model in 4-bit with the step-500 adapter",
+      "Reported test-set average error of about 172,000 EGP, and labeled the output as a listing estimate rather than an appraisal"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/egyptian-car-pricer/ECP_screen1.jpg",
+      "/Alaa-portfolio/projects/egyptian-car-pricer/ECP_screen2.jpg",
+      "/Alaa-portfolio/projects/egyptian-car-pricer/ECP_screen3.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/egyptian-car-pricer/ECP_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
   }
 ];
 
