@@ -670,6 +670,57 @@ export const projects = [
       appStore: "",
       other: ""
     }
+  },
+  {
+    id: "portfolio-assistant",
+    category: "ai",
+    title: "Portfolio Assistant",
+    shortDescription: "Chatbot on this site that answers questions about Mohamed from a personal knowledge base, using BM25 and Groq.",
+    description: "Portfolio Assistant is the chatbot behind the Ask me button on this site. It answers questions about Mohamed Alaa's background, projects, experience, skills, education, and recommendations from a markdown knowledge base, instead of relying on the model's memory.\n\nA question is ranked against those notes with BM25. The top matching chunks, plus the conversation so far, are sent to Groq's gpt-oss-20b. The prompt tells the model to say when the notes do not cover the question, and not to invent jobs, metrics, or technologies. The same answer path serves a local Gradio page and the portfolio's POST /chat API.",
+    thumbnail: "/Alaa-portfolio/projects/portfolio-assistant/PA_Thumbnail.jpg",
+    platform: ["Web", "Local"],
+    technologies: [
+      "Python",
+      "FastAPI",
+      "Gradio",
+      "BM25",
+      "rank-bm25",
+      "Groq",
+      "gpt-oss-20b",
+      "Uvicorn"
+    ],
+    tags: ["Chatbot", "BM25", "Groq", "Knowledge base"],
+    role: "Solo Developer",
+    duration: "2026",
+    company: "Personal Project",
+    features: [
+      "Markdown notes for profile, experience, projects, skills, education, and recommendations",
+      "BM25 search that drops common question words so names and project titles rank higher",
+      "Overview notes split by heading, and longer notes split on paragraph boundaries",
+      "Top 10 chunks plus earlier turns are sent with the current question",
+      "Groq gpt-oss-20b at temperature 0, instructed not to invent jobs, metrics, or technologies",
+      "FastAPI POST /chat used by the Ask me widget, with a local Gradio page for testing",
+      "CORS limited to this site and local development, and a per-IP question limit"
+    ],
+    achievements: [
+      "Shipped the chat widget on this portfolio, backed by a personal knowledge base",
+      "Grounded answers in retrieved notes so the model does not fill gaps from memory",
+      "Kept one answer path for the public widget and the local Gradio test page",
+      "Included conversation history in retrieval so follow-up questions stay on the same topic"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/portfolio-assistant/PA_screen1.jpg",
+      "/Alaa-portfolio/projects/portfolio-assistant/PA_screen2.jpg",
+      "/Alaa-portfolio/projects/portfolio-assistant/PA_screen3.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/portfolio-assistant/PA_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
   }
 ];
 
