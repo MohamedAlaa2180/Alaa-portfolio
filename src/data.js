@@ -7,14 +7,14 @@ export const personalInfo = {
   linkedin: "https://www.linkedin.com/in/m1-mohamedalaa/",
   github: "https://github.com/MohamedAlaa2180",
   hackerrank: "https://www.hackerrank.com/profile/mohamedalaasale1",
-  summary: "Senior Unity Engineer with 7+ years of expertise in game development, AR/VR solutions, and interactive experiences. Currently leading development teams at Genesis Creations, delivering cutting-edge VR training platforms and innovative multiplayer games. Proven track record with 600K+ combined downloads across published titles, including Kortifo (200K+), Experience Makkah (250K+), and Rehlatie (150K+). Specialized in multiplayer systems, VR/AR development, performance optimization, and scalable architecture design. Expert in Unity, C#, Photon/Netcode, Meta SDK, Firebase, and cloud services integration."
+  summary: "Senior Unity Engineer with 7+ years of expertise in game development, AR/VR solutions, and interactive experiences. Led development teams at Genesis Creations through July 2026, delivering cutting-edge VR training platforms and innovative multiplayer games. Proven track record with 600K+ combined downloads across published titles, including Kortifo (200K+), Experience Makkah (250K+), and Rehlatie (150K+). Specialized in multiplayer systems, VR/AR development, performance optimization, and scalable architecture design. Expert in Unity, C#, Photon/Netcode, Meta SDK, Firebase, and cloud services integration."
 };
 
 export const experience = [
   {
     company: "Genesis Creations",
     position: "Lead Unity Engineer",
-    period: "May 2025 - Present",
+    period: "May 2025 - July 2026",
     location: "Cairo, Egypt",
     achievements: [
       "Started by leading a team of 4 mid-level and senior Unity developers, then expanded to leading juniors, mid-seniors, and seniors across multiple concurrent projects",
