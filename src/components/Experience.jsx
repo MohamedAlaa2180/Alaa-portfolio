@@ -1,6 +1,6 @@
-import { Briefcase, MapPin, Calendar } from 'lucide-react';
+import { Briefcase, MapPin, Calendar, GraduationCap, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { experience } from '../data';
+import { experience, education, activities } from '../data';
 
 const Experience = () => {
   return (
@@ -61,6 +61,79 @@ const Experience = () => {
               </ul>
             </motion.div>
           ))}
+        </div>
+
+        {/* Education & Activities */}
+        <div className="grid md:grid-cols-2 gap-8 mt-12">
+          {education && education.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-800"
+            >
+              <div className="flex items-center gap-3 mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">
+                <div className="p-3 bg-primary/10 rounded-lg text-primary">
+                  <GraduationCap size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Education
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {education.map((edu, idx) => (
+                  <div key={idx} className="border-l-2 border-primary pl-4">
+                    <h4 className="text-xl font-bold text-gray-900 dark:text-white">
+                      {edu.degree}
+                    </h4>
+                    <p className="text-primary font-semibold">{edu.institution}</p>
+                    <div className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 my-1">
+                      <Calendar size={14} />
+                      <span>{edu.period}</span>
+                    </div>
+                    {edu.details && (
+                      <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">
+                        {edu.details}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
+
+          {activities && activities.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="bg-gray-50 dark:bg-dark-light rounded-xl p-6 hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-800"
+            >
+              <div className="flex items-center gap-3 mb-6 pb-2 border-b border-gray-200 dark:border-gray-800">
+                <div className="p-3 bg-secondary/10 rounded-lg text-secondary">
+                  <Award size={24} />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
+                  Activities & Mentorship
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {activities.map((act, idx) => (
+                  <div key={idx} className="border-l-2 border-secondary pl-4">
+                    <h4 className="text-lg font-bold text-gray-900 dark:text-white">
+                      {act.role}
+                    </h4>
+                    <p className="text-secondary font-semibold text-sm">{act.organization}</p>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                      {act.description}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          )}
         </div>
       </div>
     </section>

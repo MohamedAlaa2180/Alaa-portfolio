@@ -19,8 +19,9 @@ export const experience = [
     achievements: [
       "Started by leading a team of 4 mid-level and senior Unity developers, then expanded to leading juniors, mid-seniors, and seniors across multiple concurrent projects",
       "Collaborated with product owners to define sprint goals, break down features into tasks, and plan agile sprints effectively",
-      "Played a key role in building internal software solutions to increase development speed and automate repetitive workflows company-wide",
-      "Guided 6 Unity developers during a 3-month internship and participated in their graduation project",
+      "Provided technical mentorship to junior developers across multiple teams, supporting their growth and maintaining code standards",
+      "Conducted training sessions for bootcamp Unity developers, teaching intermediate and advanced Unity concepts to accelerate their learning and integration",
+      "Improved company-wide development workflow by introducing modern technologies, tools, and strategic process optimizations",
       "Designed scalable development architectures for new projects and refactored legacy codebases to improve maintainability and performance"
     ]
   },
@@ -30,11 +31,12 @@ export const experience = [
     period: "April 2024 - May 2025",
     location: "Cairo, Egypt",
     achievements: [
-      "Contributed to the development of Rehlatie, an educational 2D mobile game with over 150,000 downloads",
-      "Designed and implemented performance optimization strategy reducing app size and improving runtime efficiency using Unity Addressables",
-      "Integrated Firebase services including Cloud Functions, Remote Config, Crashlytics, and Analytics",
-      "Managed builds and deployment processes for both App Store and Google Play",
-      "Provided technical support and conducted code reviews for junior team members"
+      "Contributed to the development of Rehlatie an educational 2D mobile game using Unity, working closely with other developers and testers to ensure feature completeness and code quality",
+      "Designed and implemented a performance optimization strategy that reduced app size and improved runtime efficiency by using Unity Addressables and refactoring complex systems",
+      "Integrated Firebase services including Cloud Functions, Remote Config, Crashlytics, and Analytics to enable real-time configuration and improve stability",
+      "Managed builds and deployment processes for both App Store and Google Play, ensuring compliance with store guidelines and maintaining release stability",
+      "Provided technical support and conducted code reviews for junior team members to uphold code quality and promote best development practices",
+      "Rehlatie achieved over 150,000 downloads across both stores, highlighting the success of its design, performance, and user engagement"
     ]
   },
   {
@@ -43,12 +45,15 @@ export const experience = [
     period: "October 2022 - April 2024",
     location: "Cairo, Egypt",
     achievements: [
-      "Worked on Kortifo, a multiplayer 2D card game achieving over 200,000 downloads",
-      "Designed and architected Daily and Weekly Objectives System integrating with Unity Cloud Code",
-      "Built fully featured Shop System supporting virtual currency and real-money IAP using Unity IAP and Remote Config",
-      "Developed Card Effect Queue System for complex in-game interactions ensuring consistent gameplay logic",
-      "Implemented Unity Netcode for GameObjects to support real-time multiplayer gameplay",
-      "Collaborated with art team to translate Figma designs into polished in-game UI"
+      "Worked on Kortifo, a multiplayer 2D card game, contributing to both core gameplay mechanics and backend integration using Unity",
+      "Designed and architected the Daily and Weekly Objectives System, integrating with Unity Cloud Code to enable dynamic and remotely configurable mission logic",
+      "Built a fully featured Shop System supporting virtual currency and real-money In-App Purchases (IAP), leveraging Unity IAP and Remote Config for scalable offer management",
+      "Developed a Card Effect Queue System to determine execution order for complex in-game interactions, ensuring consistent and fair gameplay logic",
+      "Implemented Unity Netcode for GameObjects to support real-time multiplayer gameplay, handling synchronization and networked card actions",
+      "Integrated Unity services including Cloud Save, Remote Config, Cloud Code, and IAP, enabling robust backend connectivity and remote feature tuning",
+      "Collaborated directly with the art team to translate Figma designs into polished in-game UI with high visual fidelity and user-centric UX",
+      "Supported the deployment and maintenance of builds on App Store and Google Play, contributing to submission workflows and QA validation",
+      "Kortifo achieved over 200,000 downloads across both stores, reflecting the game's polished execution and strong market engagement"
     ]
   },
   {
@@ -57,10 +62,11 @@ export const experience = [
     period: "March 2022 - July 2022",
     location: "Cairo, Egypt",
     achievements: [
-      "Contributed to backend development of government web platforms using ASP.NET and C#",
-      "Designed and implemented RESTful APIs to support secure data exchange between services",
-      "Worked with MySQL and PostgreSQL databases for data modeling and query optimization",
-      "Collaborated with front-end developers and system administrators for smooth deployment"
+      "Contributed to backend development of several government web platforms using ASP.NET and C#, with a focus on API development and system integration",
+      "Designed and implemented RESTful APIs to support secure data exchange between services and external systems",
+      "Worked with MySQL and PostgreSQL databases to handle data modeling, query optimization, and stored procedures",
+      "Collaborated with front-end developers and system administrators to ensure smooth deployment and functionality across all modules",
+      "Assisted in debugging and maintaining legacy code, improving stability and system responsiveness"
     ]
   },
   {
@@ -69,10 +75,10 @@ export const experience = [
     period: "January 2022 - March 2022",
     location: "Remote",
     achievements: [
-      "Worked on mobile game project focusing on UI development and integration using Unity",
-      "Translated designs from Figma into interactive and responsive in-game interfaces",
-      "Collaborated with graphic designers to optimize asset import workflows",
-      "Maintained clean and scalable UI architecture to support future feature expansions"
+      "Worked remotely on a mobile game project, primarily focusing on UI development and integration using Unity",
+      "Translated designs from Figma into interactive and responsive in-game interfaces, ensuring alignment with gameplay flow",
+      "Collaborated with graphic designers to optimize asset import workflows and improve rendering quality across devices",
+      "Maintained clean and scalable UI architecture to support future feature expansions and localization"
     ]
   },
   {
@@ -81,10 +87,11 @@ export const experience = [
     period: "October 2019 - December 2021",
     location: "Cairo, Egypt",
     achievements: [
-      "Served as sole Unity developer in 3-person team alongside artist and graphic designer",
-      "Developed multiple Augmented Reality (AR) applications for advertising and brand activations using Vuforia and AR Foundation",
-      "Led full development of Experience Makkah VR app surpassing 250,000 downloads on Google Play Store",
-      "Implemented scene management, interactive camera systems, and spatial audio for immersive mobile VR experience",
+      "Served as the sole Unity developer in a 3-person team alongside one artist and one graphic designer",
+      "Developed multiple Augmented Reality (AR) applications primarily for advertising and interactive brand activations, using Vuforia and AR Foundation with Unity",
+      "Designed and built a 2D Tangram Puzzle Game, focusing on intuitive user interaction and mobile performance",
+      "Led the full development of Experience Makkah, a cross-platform VR simulation of the Hajj journey using Google Cardboard SDK, surpassing 250,000 downloads on Google Play Store",
+      "Implemented scene management, interactive camera systems, and spatial audio to deliver a deeply immersive mobile VR experience",
       "Optimized build size, memory usage, and rendering pipeline for smooth operation on mid-tier mobile devices"
     ]
   },
@@ -94,10 +101,11 @@ export const experience = [
     period: "February 2019 - October 2019",
     location: "Cairo, Egypt",
     achievements: [
-      "Acted as sole Unity developer for end-to-end development of 2D educational mobile games with AR features",
-      "Designed and implemented interactive learning experiences for students blending AR with traditional gameplay",
-      "Managed asset integration, gameplay logic, UI/UX flow, and performance tuning for Android devices",
-      "Delivered projects independently meeting educational objectives and production timelines"
+      "Acted as the sole Unity developer, responsible for end-to-end development of 2D educational mobile games incorporating Augmented Reality (AR) features",
+      "Designed and implemented interactive learning experiences tailored for students, blending AR content with traditional gameplay mechanics",
+      "Utilized Unity and AR toolkits to develop engaging educational content optimized for Android devices",
+      "Managed asset integration, gameplay logic, UI/UX flow, and performance tuning to ensure accessibility and stability across a range of mobile devices",
+      "Delivered projects independently, aligning with educational objectives and meeting production timelines with minimal supervision"
     ]
   }
 ];
@@ -726,61 +734,79 @@ export const projects = [
 
 export const skills = {
   "Game Development": [
-    "Unity 3D",
+    "Unity (2D & 3D)",
     "C# Programming",
-    "Game Mechanics",
-    "Physics & Animation",
+    "Game Mechanics & Physics",
+    "Addressables System",
     "UI/UX Implementation",
-    "Performance Optimization"
+    "Performance & Memory Optimization"
   ],
-  "Mobile Development": [
-    "Android & iOS",
-    "Touch Controls",
-    "Mobile Optimization",
-    "App Store Deployment",
-    "In-App Purchases",
-    "Push Notifications"
+  "Multiplayer & Backend": [
+    "Unity Netcode for GameObjects",
+    "Photon PUN & Photon Fusion",
+    "Firebase (Cloud Functions, Crashlytics, Remote Config)",
+    "Unity Cloud Code & Cloud Save",
+    "In-App Purchases (IAP)",
+    "RESTful APIs, MySQL & PostgreSQL"
   ],
-  "AR/VR": [
-    "Vuforia",
-    "ARCore/ARKit",
-    "Oculus SDK",
-    "XR Interaction Toolkit",
-    "Spatial Audio",
-    "Hand Tracking"
+  "AR / VR & Platforms": [
+    "Meta Quest / Oculus SDK",
+    "XR Interaction Toolkit & OpenXR",
+    "Vuforia & AR Foundation",
+    "Google Cardboard SDK",
+    "Spatial Audio & Interaction Systems",
+    "Android, iOS & Windows PC"
   ],
   "Tools & Technologies": [
-    "Git/GitHub",
+    "Git & GitHub",
+    "Postman",
+    "Figma",
+    "Jira & Trello",
     "Visual Studio",
-    "Blender",
-    "Photoshop",
-    "Firebase",
-    "PlayFab"
+    "ASP.NET"
   ],
   "Game Systems": [
-    "Multiplayer/Networking",
-    "Save System",
-    "Achievement System",
+    "Multiplayer Synchronization",
+    "Card Effect & Queue Systems",
+    "Daily & Weekly Objectives System",
+    "Save & Inventory Systems",
     "Analytics Integration",
-    "Monetization",
-    "Localization"
+    "Localization & Live Ops Tuning"
   ],
-  "Soft Skills": [
-    "Problem Solving",
-    "Team Collaboration",
-    "Code Review",
-    "Documentation",
-    "Agile/Scrum",
-    "Mentoring"
+  "Leadership & Methodologies": [
+    "Technical Team Leadership",
+    "Agile / Scrum & Sprint Planning",
+    "Code Reviews & Standards",
+    "Bootcamp Mentorship & Training",
+    "Architecture Design & Refactoring",
+    "Problem Solving & Root Cause Analysis"
   ]
 };
 
+export const activities = [
+  {
+    role: "Game Development Mentor",
+    organization: "Traverse Summit 2024",
+    description: "Mentored aspiring developers at Traverse Summit 2024 — the biggest high schoolers summit in the MENA region."
+  },
+  {
+    role: "Unity Developer Instructor",
+    organization: "Coursera",
+    description: "Taught intermediate and advanced game development concepts, C# programming, and Unity workflows to global learners."
+  },
+  {
+    role: "Unity Asset Store Publisher",
+    organization: "Unity Developer Community",
+    description: "Created and published reusable tools and game development assets for the worldwide Unity community."
+  }
+];
+
 export const education = [
   {
-    degree: "Bachelor of Computer Science",
-    institution: "Cairo University",
-    period: "2013 - 2017",
-    details: "Focus on Software Engineering and Game Development"
+    degree: "Bachelor of Software Engineering",
+    institution: "Ain Shams University",
+    period: "2014 - 2018",
+    details: "Focus on Software Engineering, Object-Oriented Design, Data Structures & Algorithms, and System Architecture"
   }
 ];
 
