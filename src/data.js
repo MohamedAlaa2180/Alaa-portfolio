@@ -112,6 +112,64 @@ export const experience = [
 
 export const projects = [
   {
+    id: "environment-heroes",
+    title: "Environment Heroes",
+    shortDescription: "Arabic island-cleanup game. Guide a turtle, haul litter back to a recycling chest, and chase the seagulls that steal it.",
+    description: "Environment Heroes (أبطال البيئة) is a three-minute island cleanup built in Unity 6. You play a small turtle with a 5 kg pack: pick up bottles, cans, noodle cups, pizza boxes, and trash bags, then drop them in the recycling chest before the clock runs out. Two seagulls circle the island, dive for the lighter pieces, and run off with them. Catch a gull and the piece goes into the pack if there is room.\n\nThe island is generated in code from a fixed seed, so the shore, paths, grove, clearing, and lighthouse come out the same way every launch. One round-state object owns the inventory, the score, and the timer. The HUD, minimap, and effects only read it. Movement steps at a fixed 60 Hz, with slope and step limits, and the turtle walks relative to the camera. Music, the ocean, and the effects are synthesized on the audio thread, so the loop does not follow the frame rate.",
+    thumbnail: "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Thumbnail.jpg",
+    platform: ["PC (Windows)", "Touch"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "UI Toolkit",
+      "Unity Input System",
+      "glTFast",
+      "URP post-processing"
+    ],
+    tags: ["3D", "Cleanup", "Arabic", "Procedural", "PC"],
+    role: "Solo Developer",
+    duration: "2026",
+    company: "Personal Project",
+    features: [
+      "Three-minute round. Clearing every piece adds a 200-point completion bonus and 2 points for each second left",
+      "Three stars require a full clear with at least 30 seconds remaining. A partial clear can still earn one or two stars",
+      "Five kinds of litter, six of each: bottles and cans at 10 points, noodle cups at 15, pizza boxes at 25, and trash bags at 40",
+      "A 5 kg pack. A piece that does not fit stays on the ground until you empty the pack at the chest",
+      "Two seagulls that cruise, dive, and steal pieces up to 350 g. Catching the gull recovers the piece if the pack has room",
+      "Seeded island: a 176 by 176 heightfield with shore, paths, a plaza, a grove, a clearing, a lighthouse, palms, bushes, rocks, grass, and flowers",
+      "Walkability limits for slope and step height, plus a reachability map so litter and the chest stay reachable from the start",
+      "Camera follow with collision pull-in, mouse or touch orbit, and wheel or pinch zoom",
+      "Minimap baked from the terrain, with markers for litter and the gulls",
+      "Arabic UI Toolkit screens for the menu, how to play, settings, pause, results, and a local board of the best three scores",
+      "Quality presets for high, medium, and low that change render scale, shadows, grass, and flowers",
+      "Synthesized music, ocean, pickup, and UI sounds on separate buses",
+      "Touch joystick in the left of the screen, with WASD or arrow keys on desktop and Escape to pause"
+    ],
+    achievements: [
+      "Built a timed cleanup loop where inventory, score, and the clock live in one round state",
+      "Generated the island from a fixed seed so the layout is the same on every launch",
+      "Added a seagull steal-and-chase that only changes item ownership through the round state",
+      "Synthesized the music and effects on the audio thread so timing stays off the frame rate",
+      "Shipped Arabic UI, a three-score board saved on the device, and both keyboard and touch controls"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Thumbnail.jpg",
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Screenshot_4.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/environment-heroes/EnvironmentHeroes_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "gaming-room",
     title: "Gaming Room VR",
     shortDescription: "Playable Meta Quest game room where you walk around, grab objects with your hands, play pool, and throw darts.",
