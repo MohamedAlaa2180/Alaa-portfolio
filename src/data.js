@@ -112,6 +112,65 @@ export const experience = [
 
 export const projects = [
   {
+    id: "aastmt-interior-design",
+    title: "AASTMT Interior Design Studio",
+    shortDescription: "Meta Quest interior studio. Walk a furnished bedroom, swap walls, floors, ceilings, and furniture, and dim the lights from a panel on the wall.",
+    description: "AASTMT Interior Design Studio is a Meta Quest experience for trying finishes inside a furnished bedroom. You move through the room with the thumbstick or an arc teleport, then point at a world-space panel to change walls, floor, ceiling, and furniture. Built in Unity 6 with the Universal Render Pipeline and the Meta Interaction SDK.\n\nEach piece sits in a slot against the wall and carves its footprint out of the NavMesh, so beds, nightstands, and wardrobes stay solid while you walk. Swapping a model keeps it aligned to the floor and the wall, including a mirrored left or right variant. A brightness control scales the realtime lights together with the baked lightmaps, probes, reflections, and fixture glow. The room opens from black onto a Start panel. Movement stays locked until you begin, then the lights come up.",
+    thumbnail: "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Thumbnail.jpg",
+    platform: ["Meta Quest (Horizon OS)", "Android (ARM64)"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "OpenXR",
+      "Meta XR Core SDK (v205)",
+      "Meta Interaction SDK (v205)",
+      "Unity AI Navigation",
+      "UI Toolkit",
+      "Reflex",
+      "Odin Inspector"
+    ],
+    tags: ["VR", "Meta Quest", "Interior Design", "UI Toolkit"],
+    role: "Solo Developer",
+    duration: "2026",
+    company: "AASTMT",
+    features: [
+      "Thumbstick walk on a NavMesh, with snap or smooth turn",
+      "Arc teleport from the left trigger. It lands only on walkable floor inside the room",
+      "Furniture slots place beds and commodes against the wall and block that footprint on the NavMesh",
+      "Mirrored left and right models for pieces that need a facing variant",
+      "World-space finish panel for Walls, Floor, Ceiling, and Furniture, aimed with the controller ray",
+      "Surface swaps across plaster, wood, brick, marble, tile, and decorative ceilings",
+      "Bed and commode catalogues, with body colours in royal blue, cream, and black",
+      "Brightness slider that scales realtime lights, baked lightmaps, light probes, reflections, and lamp glow",
+      "Reset restores the starting finishes and furniture",
+      "Welcome fade from black. Movement, teleport, and the design panel stay locked until Start",
+      "Grip shows and hides the finish panel",
+      "Quest rendering on URP with baked lightmaps, light probes, a reflection probe, and foveated rendering"
+    ],
+    achievements: [
+      "Built a Quest interior studio where finishes and furniture change from one wall-mounted panel",
+      "Kept walking honest by carving each spawned piece out of the NavMesh, including after a swap",
+      "Drove lights, materials, and furniture from an event bus so the panel only publishes selections",
+      "Scaled baked lightmaps and probes with the brightness slider, together with the realtime lights",
+      "Shipped a Quest-ready URP scene with baked illumination, one realtime shadow caster, and foveated rendering"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Screenshot_4.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/aastmt-interior-design/InteriorDesignStudio_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "environment-heroes",
     title: "Environment Heroes",
     shortDescription: "Arabic island-cleanup game. Guide a turtle, haul litter back to a recycling chest, and chase the seagulls that steal it.",
