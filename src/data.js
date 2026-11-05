@@ -112,6 +112,75 @@ export const experience = [
 
 export const projects = [
   {
+    id: "jelly-jam",
+    title: "Jelly Jam",
+    shortDescription: "Portrait sorting puzzle. Drag jelly pieces into matching jars before the clock runs out, and chain exits for a higher score.",
+    description: "Jelly Jam is a portrait sorting puzzle built in Unity 6. You drag glossy jelly pieces around a candy tray and push each one out through a chute of the same flavor, into the jar waiting outside the wall. A piece leaves only when it sits flush with the wall, the chute matches its flavor, and the whole edge fits the opening. A piece that is too long shakes in place. Exits within two seconds of each other raise a combo, up to ×5, and each cell of the piece scores 10 points times that step.\n\nEvery board is built backwards from an empty tray, so it can be cleared, then a solver measures the shortest solution and retries layouts that are too easy. The same run seed rebuilds the same boards. Five tiers grow the tray from 5×6 with three flavors to 7×8 with all six, and every fifth board drops back one tier. A run starts with three lives. Clearing a board pays a level bonus and a time bonus, and a life comes back every ten clears. The run saves after every snapped move and resumes if the app closes. Best scores go to a Unity leaderboard after Google Play Games sign-in, and the profile follows that account through Cloud Save. With no lives left, a rewarded ad puts time back on the same board.",
+    thumbnail: "/Alaa-portfolio/projects/jelly-jam/JellyJam_Thumbnail.jpg",
+    platform: ["Android"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "UI Toolkit",
+      "Reflex",
+      "Unity Authentication",
+      "Google Play Games",
+      "Unity Leaderboards",
+      "Unity Cloud Save",
+      "Google Mobile Ads"
+    ],
+    tags: ["Puzzle", "Sorting", "Mobile", "Procedural"],
+    role: "Solo Developer",
+    duration: "2026 · v1.0.9",
+    company: "Dream-Catcher (Personal Project)",
+    features: [
+      "Drag a piece anywhere on the tray. It slides along walls and other pieces, and snaps to a cell on release",
+      "A piece exits only through a same-flavor chute that covers its whole edge",
+      "A chute that is too short shakes the piece instead of letting it through",
+      "Six flavors, with a fruit badge on each chute and jar",
+      "Shapes grow with the tier: 1×1 and dominos first, then 3-long bars, the 2×2, and 4-long bars",
+      "10 points per cell. Exits within 2 seconds chain a combo up to ×5",
+      "Clear bonus of 100 × the board number, plus 5 × seconds left × the tier",
+      "Three lives. One returns every 10 clears. A full set of lives pays 500 points instead",
+      "A clear with at least half the time left is marked as a fast clear",
+      "The last 10 seconds turn the timer red and the jelly faces worried",
+      "Out of time with no lives left offers a rewarded ad that puts at least 30 seconds back on the same board",
+      "Five tiers, from a 5×6 tray with three flavors to a 7×8 tray with all six. Every fifth board drops one tier",
+      "After board 25 the base time tightens by one second per board, and never goes under 75 seconds",
+      "Boards are generated ahead on a background thread. The same run seed rebuilds the same boards",
+      "Faces blink while idle, squash when grabbed, and smile on the way into the jar",
+      "UI Toolkit screens for the menu, pause, settings, level clear, run over, and a 50-row leaderboard",
+      "Settings for sound, music, and haptics, plus a reset for the best score",
+      "The run saves after every snapped move and when the app pauses, and resumes on the next launch",
+      "Google Play Games sign-in, a Unity leaderboard of best scores, and Cloud Save for the profile"
+    ],
+    achievements: [
+      "Built the board, dragging, and scoring in plain C#, with Unity used for the view, input, and save",
+      "Generated every board backwards from an empty tray, then rejected layouts the solver found too easy",
+      "Covered exit rules and dragging with edit-mode tests, including a piece that is too long for its chute",
+      "Saved the run after each snapped move so closing the app resumes the same board",
+      "Signed the player in with Google Play Games and sent the best score to a Unity leaderboard without a typed name",
+      "Kept the profile on Cloud Save so the best score and settings follow that account"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Screenshot_6.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/jelly-jam/JellyJam_Video.mp4"
+    ],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "aastmt-interior-design",
     title: "AASTMT Interior Design Studio",
     shortDescription: "Meta Quest interior studio. Walk a furnished bedroom, swap walls, floors, ceilings, and furniture, and dim the lights from a panel on the wall.",
