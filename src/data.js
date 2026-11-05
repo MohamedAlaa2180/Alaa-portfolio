@@ -175,7 +175,7 @@ export const projects = [
       "/Alaa-portfolio/projects/jelly-jam/JellyJam_Video.mp4"
     ],
     links: {
-      playStore: "",
+      playStore: "https://play.google.com/store/apps/details?id=com.dreamcatcher.jellyjam&hl=en",
       appStore: "",
       other: ""
     }
