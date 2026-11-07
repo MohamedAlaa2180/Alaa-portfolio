@@ -711,7 +711,10 @@ export const projects = [
       "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_5.jpg",
       "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Screenshot_6.jpg"
     ],
-    videos: ["https://www.youtube.com/embed/7XONnbZy8wQ"],
+    videos: [
+      "https://www.youtube.com/embed/7XONnbZy8wQ",
+      "/Alaa-portfolio/projects/experience-makkah/ExperienceMakkah_Video.mp4"
+    ],
     links: {
       playStore: "https://play.google.com/store/apps/details?id=com.vhorus.makkah&hl=en_US",
       appStore: "https://apps.apple.com/us/app/experience-makkah-vol-2/id1509327242"
