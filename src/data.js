@@ -112,6 +112,73 @@ export const experience = [
 
 export const projects = [
   {
+    id: "el-ogra-yasta",
+    title: "El Ogra Yasta (الأجرة يسطا)",
+    shortDescription: "Arabic microbus conductor game. Collect fares on a Cairo line, count the right change from the drawer, and catch riders who claim they already paid.",
+    description: "El Ogra Yasta is a portrait Arabic game built in Unity 6 where you work as the conductor of a Cairo microbus on the Ramses to Ataba line. Riders board at each station, call out where they are going, and hand over a note. You take the note, build the change from your drawer in the tray, and hand it over before their patience runs out. The fare depends on how many stations they ride, and the change has to be exact. When the drawer runs short, you break a bigger note into smaller ones.\n\nA shift runs on a clock with a two-second stop at every station, where the clock and patience pause. From shift 3, some riders claim they already paid. Calling one out makes them pay, but accusing a rider who really paid costs a star. Correct hand-overs in a row build a combo that doubles points from the fifth and triples them from the tenth. The 24 shifts unlock by stars, a daily challenge picks the same shift on every device for that day, and the coins you collect buy boosts and cabin decor in the shop. The fare, score, and shift rules are plain C# with edit-mode tests, and progress syncs through Google Play Games and Unity Cloud Save.",
+    thumbnail: "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Thumbnail.jpg",
+    platform: ["Android"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "uGUI",
+      "RTLTMPro",
+      "Reflex",
+      "Unity Authentication",
+      "Google Play Games",
+      "Unity Cloud Save",
+      "Firebase Analytics",
+      "Firebase Remote Config",
+      "Google Mobile Ads"
+    ],
+    tags: ["Casual", "Arabic", "Mobile", "Time Management"],
+    role: "Solo Developer",
+    duration: "2026 · v1.0.5",
+    company: "Dream-Catcher (Personal Project)",
+    features: [
+      "Nine seats in the microbus. A new rider sits in a random free seat and calls out their stop",
+      "Fares by distance on the Ramses to Ataba line: 5, 7, 9, or 10 pounds per rider, multiplied by the party size",
+      "Take the rider's note, build the exact change in the tray from 1, 5, 10, 20, 50, and 100 notes and coins, then hand it over",
+      "A wrong total is rejected and locks the hand-over button for a moment",
+      "Break a bigger note into smaller ones when the drawer runs short. Shifts start with a lean drawer so this comes up mid-shift",
+      "Each rider waits a limited time. A rider who leaves without change counts as missed",
+      "The microbus stops for two seconds at every station. The clock and patience pause, and settled riders get off at their stop",
+      "From shift 3, about one rider in ten claims they already paid. Calling one out makes them pay. Accusing a paying rider costs a star",
+      "100 points per rider, a speed bonus up to 50, and a streak bonus. The combo doubles points from 5 in a row and triples them from 10",
+      "Three stars need every rider served with no mistakes and a fast average close",
+      "24 shifts that unlock by stars, and a daily challenge that picks the same shift on every device that day",
+      "Five conductor ranks with five tiers each, earned from the best score on every shift",
+      "Shop with boosts (extra patience, spare change, combo shield, and a cheater hint), hanging items, decor, cabin styles, and phrase stickers, plus a daily discounted offer",
+      "Rewarded ad to double a shift's earnings",
+      "Google Play Games sign-in with progress kept on Unity Cloud Save, and tuning values from Firebase Remote Config"
+    ],
+    achievements: [
+      "Built the fare, change, and scoring rules in plain C#, with Unity used for the view, input, and save",
+      "Made every hand-over all-or-nothing, so a rejected change leaves the drawer exactly as it was",
+      "Covered the drawer, patience, cheaters, scoring, shifts, shop, and progress with edit-mode tests",
+      "Seeded seat picks, cheaters, and the daily challenge so the same shift plays the same way on every device",
+      "Shipped a fully Arabic UI with right-to-left text and Cairo street art"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_3.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_4.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_5.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_6.jpg",
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Screenshot_7.jpg"
+    ],
+    videos: [
+      "/Alaa-portfolio/projects/el-ogra-yasta/ElOgraYasta_Video.mp4"
+    ],
+    links: {
+      playStore: "https://play.google.com/store/apps/details?id=com.dreamcatcher.elograyasta&hl=en",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "jelly-jam",
     title: "Jelly Jam",
     shortDescription: "Portrait sorting puzzle. Drag jelly pieces into matching jars before the clock runs out, and chain exits for a higher score.",
