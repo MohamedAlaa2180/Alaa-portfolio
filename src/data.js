@@ -112,6 +112,65 @@ export const experience = [
 
 export const projects = [
   {
+    id: "the-passive-design-lab",
+    title: "The Passive Design Lab",
+    shortDescription: "Meta Quest lab for architecture students. Six stations on orientation, form, shading, daylight, building skin, and natural ventilation under the Alexandria sun.",
+    description: "The Passive Design Lab is a Meta Quest teaching experience built in Unity 6 for architecture students. You start in an exhibition hall with six portals, each with a turning 360° preview of its station, and step through into a lesson on one passive design idea. Every station has a task panel and a control panel, and the sun follows the real path over Alexandria for 21 June, the equinox, or 21 December at any solar time.\n\nThe stations run from the scale model to the room. Turn a bar building on a turntable and watch a solar heat map shift across its faces. Compare a compact block, a long bar, and a courtyard under one sun, then walk into the courtyard at full size. Pull an overhang, fins, a louvre blind, or mashrabiya shutters across a classroom window. Switch window sizes and a light shelf and read the daylight with a meter on the controller ray. Swap a glass skin for thick masonry and feel the room's temperature on your hands through the day. Open windows and a malqaf wind catcher and watch the air move as glowing particles. The readouts come from simple, explainable formulas, such as NOAA sun position, the CIE overcast sky with split-flux reflection, and textbook orifice equations, so a student can follow every number.",
+    thumbnail: "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Thumbnail.jpg",
+    platform: ["Meta Quest (Horizon OS)", "Android (ARM64)"],
+    technologies: [
+      "Unity 6 (6000.4.9f1)",
+      "C#",
+      "Universal Render Pipeline (URP 17)",
+      "OpenXR",
+      "Meta XR Core SDK (v205)",
+      "Meta Interaction SDK (v205)",
+      "Unity AI Navigation",
+      "uGUI",
+      "Reflex",
+      "DOTween",
+      "ProBuilder"
+    ],
+    tags: ["VR", "Meta Quest", "Education", "Architecture", "Simulation"],
+    role: "Solo Developer",
+    duration: "2026 · v0.1.0",
+    company: "AASTMT",
+    features: [
+      "Exhibition hall with six station portals, each showing a turning 360° preview, the station number, title, and summary",
+      "Station 1, Orientation: turn a 1:50 bar building on a turntable in 15° steps and see which façade gets the most sun",
+      "Solar heat map on the models, and a surface probe that reads the exposure at the exact spot the ray points to",
+      "Station 2, Building Geometry: a compact block, an east-west bar, and a courtyard of similar floor area under one sun, with the share of wall in direct sun and how long the court stays in shade",
+      "A walk-in 1:1 courtyard that turns with the table model so the view inside matches the readouts",
+      "Station 3, Solar Control: slide out an overhang, run bronze fins along a track, lower a louvre blind, or close mashrabiya shutters with grab handles, then set the blade angle with a lever",
+      "Turn the classroom so the window faces north, east, south, or west, and read how much of the window is in sun and how deep the sun patch reaches",
+      "Station 4, Daylight: three window sizes and a light shelf, each with its own baked lightmaps, a light meter on the controller ray, and an optional daylight map",
+      "Station 5, Building Skin: a glass skin or 0.45 m masonry walls with an opening window, played through 21 June from 06:00 to midnight",
+      "Thermal vision recolours every surface by temperature, and the hands tint and buzz near hot surfaces, with a comfort reading on the wrist",
+      "Station 6, Natural Ventilation: a cross-ventilated window room and a malqaf wind catcher room with a low inlet and high vent",
+      "Air drawn as glowing particle streams: pale blue outdoor air, brighter air moving through the room, and orange warm air rising",
+      "Sun positioned for Alexandria by latitude, date, and solar time, with a sun path arc, dusk dimming, and seasons on the panel",
+      "Thumbstick walking on a NavMesh with smooth turn, and a left-trigger arc teleport that snaps to marked points",
+      "Fade transitions between the hub and stations, landing in front of the next portal when you come back"
+    ],
+    achievements: [
+      "Built six interactive passive design lessons for Quest, each tied to a clear task and live readouts",
+      "Computed sun position from the NOAA declination series and covered it with edit-mode tests",
+      "Kept the physics explainable: CIE overcast daylight with split-flux reflection, an instructor's temperature table, and textbook ventilation equations",
+      "Swapped baked lightmap sets at runtime per window and skin variant, with the realtime sun on top and the sky fading at dusk",
+      "Drew airflow with one script-driven particle system and thermal vision with per-renderer colours, light enough for Quest 3",
+      "Generated the stations, classroom kit, and campus from editor builder scripts so scenes can be rebuilt and rebaked"
+    ],
+    images: [
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Thumbnail.jpg"
+    ],
+    videos: [],
+    links: {
+      playStore: "",
+      appStore: "",
+      other: ""
+    }
+  },
+  {
     id: "el-ogra-yasta",
     title: "El Ogra Yasta (الأجرة يسطا)",
     shortDescription: "Arabic microbus conductor game. Collect fares on a Cairo line, count the right change from the drawer, and catch riders who claim they already paid.",
