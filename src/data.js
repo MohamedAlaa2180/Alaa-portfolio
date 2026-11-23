@@ -161,9 +161,14 @@ export const projects = [
       "Generated the stations, classroom kit, and campus from editor builder scripts so scenes can be rebuilt and rebaked"
     ],
     images: [
-      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Thumbnail.jpg"
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Thumbnail.jpg",
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Screenshot_1.jpg",
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Screenshot_2.jpg",
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Screenshot_3.jpg"
     ],
-    videos: [],
+    videos: [
+      "/Alaa-portfolio/projects/the-passive-design-lab/PassiveDesignLab_Video.mp4"
+    ],
     links: {
       playStore: "",
       appStore: "",
